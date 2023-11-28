@@ -1160,7 +1160,30 @@ release/welcome.o: ../xentype/welcome.cpp ../xentype/welcome.h \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/QSizeF \
 		C:/Qt/6.6.0/mingw_64/include/QtGui/QTransform \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/qnativeinterface.h \
-		ui_welcome.h
+		ui_welcome.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qeventloop.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qfuture.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qfutureinterface.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qmutex.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qdeadlinetimer.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qelapsedtimer.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qtsan_impl.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qresultstore.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qfuture_impl.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qthreadpool.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qthread.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qrunnable.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qexception.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qpromise.h \
+		C:/Qt/6.6.0/mingw_64/include/QtGui/qguiapplication.h \
+		C:/Qt/6.6.0/mingw_64/include/QtGui/qinputmethod.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qlocale.h \
+		C:/Qt/6.6.0/mingw_64/include/QtGui/qguiapplication_platform.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\welcome.o ..\xentype\welcome.cpp
 
 release/qrc_resource.o: release/qrc_resource.cpp 
