@@ -11,6 +11,7 @@
 #include<QColorDialog>
 #include<QTextCursor>
 #include<QTextCharFormat>
+#include <QIcon>
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -61,6 +62,8 @@ private slots:
     void on_pushButton_13_clicked();
 
     void on_pushButton_14_clicked();
+
+    void on_actionXenType_triggered();
 
 private:
     Ui::MainWindow *ui;

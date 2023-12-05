@@ -1,11 +1,13 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "aboutme.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    setWindowTitle("Xentype");
 }
 
 MainWindow::~MainWindow()
@@ -184,5 +186,13 @@ void MainWindow::on_pushButton_14_clicked()
     // Apply the format to the selected text or the cursor position
     cursor.mergeCharFormat(format);
     ui->textEdit->mergeCurrentCharFormat(format);
+}
+
+
+void MainWindow::on_actionXenType_triggered()
+{
+    Dialog anInstance;
+    anInstance.setModal(true);
+    anInstance.exec();
 }
 
