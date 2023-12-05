@@ -28,5 +28,6 @@
         <file>icons/Redo.png</file>
         <file>icons/Save.png</file>
         <file>icons/Undo.png</file>
+        <file>icons/logo.png</file>
     </qresource>
 </RCC>
