@@ -57,20 +57,6 @@
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButton_17">
-        <property name="text">
-         <string/>
-        </property>
-        <property name="icon">
-         <iconset resource="resource.qrc">
-          <normaloff>:/file/icons/todo list.png</normaloff>:/file/icons/todo list.png</iconset>
-        </property>
-        <property name="flat">
-         <bool>false</bool>
-        </property>
-       </widget>
-      </item>
-      <item>
        <widget class="QPushButton" name="pushButton_3">
         <property name="text">
          <string/>

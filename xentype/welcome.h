@@ -1,6 +1,5 @@
 #ifndef WELCOME_H
 #define WELCOME_H
-
 #include <QWidget>
 
 namespace Ui {
@@ -14,6 +13,9 @@ class welcome : public QWidget
 public:
     explicit welcome(QWidget *parent = nullptr);
     ~welcome();
+
+private slots:
+    void on_pushButton_clicked();
 
 private:
     Ui::welcome *ui;

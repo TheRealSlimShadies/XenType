@@ -1,5 +1,6 @@
 <RCC>
     <qresource prefix="/file">
+        <file>icons/About.png</file>
         <file>icons/add image.png</file>
         <file>icons/add.png</file>
         <file>icons/bold.png</file>
@@ -9,25 +10,26 @@
         <file>icons/copy.png</file>
         <file>icons/cut.png</file>
         <file>icons/decrease font.png</file>
+        <file>icons/delete.png</file>
         <file>icons/increase font.png</file>
         <file>icons/indent.png</file>
         <file>icons/italics.png</file>
         <file>icons/justify.png</file>
         <file>icons/left alignment.png</file>
+        <file>icons/logo.png</file>
         <file>icons/new folder.png</file>
         <file>icons/numbered list.png</file>
+        <file>icons/Open.png</file>
         <file>icons/paste.png</file>
+        <file>icons/Redo.png</file>
+        <file>icons/resource.qrc</file>
         <file>icons/right alignment.png</file>
+        <file>icons/Save.png</file>
         <file>icons/subscript.png</file>
         <file>icons/superscript.png</file>
         <file>icons/text color.png</file>
         <file>icons/todo list.png</file>
         <file>icons/underline.png</file>
-        <file>icons/About.png</file>
-        <file>icons/Open.png</file>
-        <file>icons/Redo.png</file>
-        <file>icons/Save.png</file>
         <file>icons/Undo.png</file>
-        <file>icons/delete.png</file>
     </qresource>
 </RCC>

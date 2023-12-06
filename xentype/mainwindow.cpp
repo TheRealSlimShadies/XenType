@@ -1,12 +1,11 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-
 #include "notesmanager.h"
 #include "note.h"
 #include "noteslistwidget.h"
-
 #include <QPushButton>
 #include <QMessageBox>
+
 
 MainWindow::MainWindow(NotesManager& manager,QWidget *parent)
     : QMainWindow(parent)
@@ -14,9 +13,10 @@ MainWindow::MainWindow(NotesManager& manager,QWidget *parent)
     , notesManager(manager)
 {
     ui->setupUi(this);
-
+    setWindowTitle("Xentype");
     makeConnections();
     init();
+
 }
 
 MainWindow::~MainWindow()
@@ -198,6 +198,13 @@ void MainWindow::on_pushButton_14_clicked()
 }
 
 
+void MainWindow::on_actionXenType_triggered()
+{
+    QDialog anInstance;
+    anInstance.setModal(true);
+    anInstance.exec();
+}
+
 
 void MainWindow::onNewNoteBtnClicked()
 {
@@ -287,4 +294,3 @@ void MainWindow::makeConnections()
     connect (ui->NotesListWIdget, &NotesListWidget::selectedNoteChanged, this, &MainWindow::onSelectedNoteChanged);
 
 }
-

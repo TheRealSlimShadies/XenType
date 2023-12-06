@@ -12,6 +12,7 @@
 #include<QTextCursor>
 #include<QTextCharFormat>
 #include<QWidget>
+#include <QIcon>
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -24,7 +25,7 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    MainWindow(NotesManager& manager, QWidget *parent = nullptr);
+   MainWindow(NotesManager& manager, QWidget *parent = nullptr);
     ~MainWindow();
 
 private slots:
@@ -71,7 +72,7 @@ private slots:
 
     void onRemoveNoteBtnClicked();
 
-
+    void on_actionXenType_triggered();
 
 //handle NoteManager Signals
     void onNewNoteCreated(int id);
@@ -82,6 +83,7 @@ private slots:
     void onSelectedNoteChanged(int id);
 
     void onRemoveNote(int id);
+
 
 
 private:

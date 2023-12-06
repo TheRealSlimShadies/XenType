@@ -11,6 +11,8 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -18,12 +20,28 @@ QT_BEGIN_NAMESPACE
 class Ui_welcome
 {
 public:
+    QLabel *label;
+    QPushButton *pushButton;
 
     void setupUi(QWidget *welcome)
     {
         if (welcome->objectName().isEmpty())
             welcome->setObjectName("welcome");
-        welcome->resize(400, 300);
+        welcome->resize(599, 419);
+        welcome->setStyleSheet(QString::fromUtf8("background-color:black;"));
+        label = new QLabel(welcome);
+        label->setObjectName("label");
+        label->setGeometry(QRect(180, 60, 261, 131));
+        label->setStyleSheet(QString::fromUtf8("font: 48pt \"Segoe UI\";\n"
+"color:white;\n"
+"border: 2px solid white;\n"
+"border-radius:10px;"));
+        pushButton = new QPushButton(welcome);
+        pushButton->setObjectName("pushButton");
+        pushButton->setGeometry(QRect(200, 290, 221, 51));
+        pushButton->setStyleSheet(QString::fromUtf8("border: 5px solid white;\n"
+"border-radius: 10px;\n"
+"color: white;"));
 
         retranslateUi(welcome);
 
@@ -33,6 +51,8 @@ public:
     void retranslateUi(QWidget *welcome)
     {
         welcome->setWindowTitle(QCoreApplication::translate("welcome", "Form", nullptr));
+        label->setText(QCoreApplication::translate("welcome", "Xentype", nullptr));
+        pushButton->setText(QCoreApplication::translate("welcome", "Continue", nullptr));
     } // retranslateUi
 
 };
