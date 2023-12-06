@@ -5,6 +5,7 @@
 #include "noteslistwidget.h"
 #include <QPushButton>
 #include <QMessageBox>
+#include "aboutme.h"
 
 
 MainWindow::MainWindow(NotesManager& manager,QWidget *parent)
@@ -200,7 +201,7 @@ void MainWindow::on_pushButton_14_clicked()
 
 void MainWindow::on_actionXenType_triggered()
 {
-    QDialog anInstance;
+    Dialog anInstance;
     anInstance.setModal(true);
     anInstance.exec();
 }
