@@ -12,16 +12,22 @@ SOURCES += \
     aboutme.cpp \
     main.cpp \
     mainwindow.cpp \
+    noteslistwidget.cpp \
+    notesmanager.cpp \
     welcome.cpp
 
 HEADERS += \
     aboutme.h \
     mainwindow.h \
+    note.h \
+    noteslistwidget.h \
+    notesmanager.h \
     welcome.h
 
 FORMS += \
     aboutme.ui \
     mainwindow.ui \
+    noteslistwidget.ui \
     welcome.ui
 
 # Default rules for deployment.

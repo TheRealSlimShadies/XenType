@@ -3,8 +3,10 @@
 #include "mainwindow.h"
 #include <QIcon>
 #include <QApplication>
-welcome::welcome(QWidget *parent) :
-    QWidget(parent),
+#include "notesmanager.h"
+
+welcome::welcome(QWidget *parent)
+    :QWidget(parent),
     ui(new Ui::welcome)
 {
     ui->setupUi(this);
@@ -17,9 +19,10 @@ welcome::~welcome()
 
 void welcome::on_pushButton_clicked()
 {
-    MainWindow *mainWindow = new MainWindow();
+    NotesManager *notesManager = new NotesManager();
+    MainWindow *mainWindow = new MainWindow(*notesManager);
     mainWindow->show();
 
     this->close();
-}
 
+}

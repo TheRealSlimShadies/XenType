@@ -1,6 +1,5 @@
 #ifndef WELCOME_H
 #define WELCOME_H
-
 #include <QWidget>
 
 namespace Ui {

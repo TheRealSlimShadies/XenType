@@ -1,0 +1,35 @@
+<RCC>
+    <qresource prefix="/file">
+        <file>About.png</file>
+        <file>add image.png</file>
+        <file>add.png</file>
+        <file>bold.png</file>
+        <file>bullet list.png</file>
+        <file>centre alignment.png</file>
+        <file>color fill.png</file>
+        <file>copy.png</file>
+        <file>cut.png</file>
+        <file>decrease font.png</file>
+        <file>delete.png</file>
+        <file>increase font.png</file>
+        <file>indent.png</file>
+        <file>italics.png</file>
+        <file>justify.png</file>
+        <file>left alignment.png</file>
+        <file>logo.png</file>
+        <file>new folder.png</file>
+        <file>numbered list.png</file>
+        <file>Open.png</file>
+        <file>paste.png</file>
+        <file>Redo.png</file>
+        <file>resource.qrc</file>
+        <file>right alignment.png</file>
+        <file>Save.png</file>
+        <file>subscript.png</file>
+        <file>superscript.png</file>
+        <file>text color.png</file>
+        <file>todo list.png</file>
+        <file>underline.png</file>
+        <file>Undo.png</file>
+    </qresource>
+</RCC>
