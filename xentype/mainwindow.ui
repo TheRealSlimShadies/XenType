@@ -18,13 +18,27 @@
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
-       <widget class="QPushButton" name="pushButton">
+       <widget class="QPushButton" name="NewNoteBtn">
         <property name="text">
          <string/>
         </property>
         <property name="icon">
          <iconset resource="resource.qrc">
           <normaloff>:/file/icons/add.png</normaloff>:/file/icons/add.png</iconset>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="RemoveNoteBtn">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/file/icons/delete.png</normaloff>:/file/icons/delete.png</iconset>
         </property>
        </widget>
       </item>
@@ -37,6 +51,9 @@
          <iconset resource="resource.qrc">
           <normaloff>:/file/icons/Save.png</normaloff>:/file/icons/Save.png</iconset>
         </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
        </widget>
       </item>
       <item>
@@ -47,6 +64,9 @@
         <property name="icon">
          <iconset resource="resource.qrc">
           <normaloff>:/file/icons/todo list.png</normaloff>:/file/icons/todo list.png</iconset>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
         </property>
        </widget>
       </item>
@@ -59,6 +79,9 @@
          <iconset resource="resource.qrc">
           <normaloff>:/file/icons/increase font.png</normaloff>:/file/icons/increase font.png</iconset>
         </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
        </widget>
       </item>
       <item>
@@ -69,6 +92,9 @@
         <property name="icon">
          <iconset resource="resource.qrc">
           <normaloff>:/file/icons/decrease font.png</normaloff>:/file/icons/decrease font.png</iconset>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
         </property>
        </widget>
       </item>
@@ -81,6 +107,9 @@
          <iconset resource="resource.qrc">
           <normaloff>:/file/icons/bold.png</normaloff>:/file/icons/bold.png</iconset>
         </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
        </widget>
       </item>
       <item>
@@ -91,6 +120,9 @@
         <property name="icon">
          <iconset resource="resource.qrc">
           <normaloff>:/file/icons/underline.png</normaloff>:/file/icons/underline.png</iconset>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
         </property>
        </widget>
       </item>
@@ -103,6 +135,9 @@
          <iconset resource="resource.qrc">
           <normaloff>:/file/icons/italics.png</normaloff>:/file/icons/italics.png</iconset>
         </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
        </widget>
       </item>
       <item>
@@ -113,6 +148,9 @@
         <property name="icon">
          <iconset resource="resource.qrc">
           <normaloff>:/file/icons/text color.png</normaloff>:/file/icons/text color.png</iconset>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
         </property>
        </widget>
       </item>
@@ -125,6 +163,9 @@
          <iconset resource="resource.qrc">
           <normaloff>:/file/icons/superscript.png</normaloff>:/file/icons/superscript.png</iconset>
         </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
        </widget>
       </item>
       <item>
@@ -135,6 +176,9 @@
         <property name="icon">
          <iconset resource="resource.qrc">
           <normaloff>:/file/icons/subscript.png</normaloff>:/file/icons/subscript.png</iconset>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
         </property>
        </widget>
       </item>
@@ -147,6 +191,9 @@
          <iconset resource="resource.qrc">
           <normaloff>:/file/icons/left alignment.png</normaloff>:/file/icons/left alignment.png</iconset>
         </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
        </widget>
       </item>
       <item>
@@ -157,6 +204,9 @@
         <property name="icon">
          <iconset resource="resource.qrc">
           <normaloff>:/file/icons/right alignment.png</normaloff>:/file/icons/right alignment.png</iconset>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
         </property>
        </widget>
       </item>
@@ -169,6 +219,9 @@
          <iconset resource="resource.qrc">
           <normaloff>:/file/icons/centre alignment.png</normaloff>:/file/icons/centre alignment.png</iconset>
         </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
        </widget>
       </item>
       <item>
@@ -179,6 +232,9 @@
         <property name="icon">
          <iconset resource="resource.qrc">
           <normaloff>:/file/icons/justify.png</normaloff>:/file/icons/justify.png</iconset>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
         </property>
        </widget>
       </item>
@@ -191,6 +247,9 @@
          <iconset resource="resource.qrc">
           <normaloff>:/file/icons/Undo.png</normaloff>:/file/icons/Undo.png</iconset>
         </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
        </widget>
       </item>
       <item>
@@ -202,6 +261,9 @@
          <iconset resource="resource.qrc">
           <normaloff>:/file/icons/Redo.png</normaloff>:/file/icons/Redo.png</iconset>
         </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
        </widget>
       </item>
      </layout>
@@ -211,10 +273,10 @@
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
       </property>
-      <widget class="QWidget" name="widget" native="true">
+      <widget class="NotesListWidget" name="NotesListWIdget" native="true">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-         <horstretch>1</horstretch>
+         <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
        </property>
@@ -225,6 +287,15 @@
          <horstretch>1</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
        </property>
       </widget>
      </widget>
@@ -425,6 +496,14 @@
    </property>
   </action>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>NotesListWidget</class>
+   <extends>QWidget</extends>
+   <header>noteslistwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources>
   <include location="resource.qrc"/>
  </resources>

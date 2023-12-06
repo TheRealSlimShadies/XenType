@@ -11,14 +11,20 @@ CONFIG += c++17
 SOURCES += \
     main.cpp \
     mainwindow.cpp \
+    noteslistwidget.cpp \
+    notesmanager.cpp \
     welcome.cpp
 
 HEADERS += \
     mainwindow.h \
+    note.h \
+    noteslistwidget.h \
+    notesmanager.h \
     welcome.h
 
 FORMS += \
     mainwindow.ui \
+    noteslistwidget.ui \
     welcome.ui
 
 # Default rules for deployment.

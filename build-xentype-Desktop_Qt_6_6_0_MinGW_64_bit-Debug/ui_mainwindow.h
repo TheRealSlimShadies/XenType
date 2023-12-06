@@ -23,6 +23,7 @@
 #include <QtWidgets/QTextEdit>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
+#include "noteslistwidget.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -49,7 +50,8 @@ public:
     QWidget *centralwidget;
     QVBoxLayout *verticalLayout;
     QHBoxLayout *horizontalLayout;
-    QPushButton *pushButton;
+    QPushButton *NewNoteBtn;
+    QPushButton *RemoveNoteBtn;
     QPushButton *pushButton_2;
     QPushButton *pushButton_17;
     QPushButton *pushButton_3;
@@ -67,7 +69,7 @@ public:
     QPushButton *pushButton_15;
     QPushButton *pushButton_16;
     QSplitter *splitter;
-    QWidget *widget;
+    NotesListWidget *NotesListWIdget;
     QTextEdit *textEdit;
     QMenuBar *menubar;
     QMenu *menuFile;
@@ -168,115 +170,140 @@ public:
         verticalLayout->setObjectName("verticalLayout");
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName("horizontalLayout");
-        pushButton = new QPushButton(centralwidget);
-        pushButton->setObjectName("pushButton");
-        pushButton->setIcon(icon);
+        NewNoteBtn = new QPushButton(centralwidget);
+        NewNoteBtn->setObjectName("NewNoteBtn");
+        NewNoteBtn->setIcon(icon);
+        NewNoteBtn->setFlat(false);
 
-        horizontalLayout->addWidget(pushButton);
+        horizontalLayout->addWidget(NewNoteBtn);
+
+        RemoveNoteBtn = new QPushButton(centralwidget);
+        RemoveNoteBtn->setObjectName("RemoveNoteBtn");
+        QIcon icon16;
+        icon16.addFile(QString::fromUtf8(":/file/icons/delete.png"), QSize(), QIcon::Normal, QIcon::Off);
+        RemoveNoteBtn->setIcon(icon16);
+
+        horizontalLayout->addWidget(RemoveNoteBtn);
 
         pushButton_2 = new QPushButton(centralwidget);
         pushButton_2->setObjectName("pushButton_2");
         pushButton_2->setIcon(icon1);
+        pushButton_2->setFlat(false);
 
         horizontalLayout->addWidget(pushButton_2);
 
         pushButton_17 = new QPushButton(centralwidget);
         pushButton_17->setObjectName("pushButton_17");
-        QIcon icon16;
-        icon16.addFile(QString::fromUtf8(":/file/icons/todo list.png"), QSize(), QIcon::Normal, QIcon::Off);
-        pushButton_17->setIcon(icon16);
+        QIcon icon17;
+        icon17.addFile(QString::fromUtf8(":/file/icons/todo list.png"), QSize(), QIcon::Normal, QIcon::Off);
+        pushButton_17->setIcon(icon17);
+        pushButton_17->setFlat(false);
 
         horizontalLayout->addWidget(pushButton_17);
 
         pushButton_3 = new QPushButton(centralwidget);
         pushButton_3->setObjectName("pushButton_3");
         pushButton_3->setIcon(icon8);
+        pushButton_3->setFlat(false);
 
         horizontalLayout->addWidget(pushButton_3);
 
         pushButton_4 = new QPushButton(centralwidget);
         pushButton_4->setObjectName("pushButton_4");
         pushButton_4->setIcon(icon9);
+        pushButton_4->setFlat(false);
 
         horizontalLayout->addWidget(pushButton_4);
 
         pushButton_5 = new QPushButton(centralwidget);
         pushButton_5->setObjectName("pushButton_5");
         pushButton_5->setIcon(icon11);
+        pushButton_5->setFlat(false);
 
         horizontalLayout->addWidget(pushButton_5);
 
         pushButton_6 = new QPushButton(centralwidget);
         pushButton_6->setObjectName("pushButton_6");
         pushButton_6->setIcon(icon12);
+        pushButton_6->setFlat(false);
 
         horizontalLayout->addWidget(pushButton_6);
 
         pushButton_7 = new QPushButton(centralwidget);
         pushButton_7->setObjectName("pushButton_7");
         pushButton_7->setIcon(icon13);
+        pushButton_7->setFlat(false);
 
         horizontalLayout->addWidget(pushButton_7);
 
         pushButton_8 = new QPushButton(centralwidget);
         pushButton_8->setObjectName("pushButton_8");
         pushButton_8->setIcon(icon10);
+        pushButton_8->setFlat(false);
 
         horizontalLayout->addWidget(pushButton_8);
 
         pushButton_13 = new QPushButton(centralwidget);
         pushButton_13->setObjectName("pushButton_13");
         pushButton_13->setIcon(icon14);
+        pushButton_13->setFlat(false);
 
         horizontalLayout->addWidget(pushButton_13);
 
         pushButton_14 = new QPushButton(centralwidget);
         pushButton_14->setObjectName("pushButton_14");
         pushButton_14->setIcon(icon15);
+        pushButton_14->setFlat(false);
 
         horizontalLayout->addWidget(pushButton_14);
 
         pushButton_9 = new QPushButton(centralwidget);
         pushButton_9->setObjectName("pushButton_9");
-        QIcon icon17;
-        icon17.addFile(QString::fromUtf8(":/file/icons/left alignment.png"), QSize(), QIcon::Normal, QIcon::Off);
-        pushButton_9->setIcon(icon17);
+        QIcon icon18;
+        icon18.addFile(QString::fromUtf8(":/file/icons/left alignment.png"), QSize(), QIcon::Normal, QIcon::Off);
+        pushButton_9->setIcon(icon18);
+        pushButton_9->setFlat(false);
 
         horizontalLayout->addWidget(pushButton_9);
 
         pushButton_10 = new QPushButton(centralwidget);
         pushButton_10->setObjectName("pushButton_10");
-        QIcon icon18;
-        icon18.addFile(QString::fromUtf8(":/file/icons/right alignment.png"), QSize(), QIcon::Normal, QIcon::Off);
-        pushButton_10->setIcon(icon18);
+        QIcon icon19;
+        icon19.addFile(QString::fromUtf8(":/file/icons/right alignment.png"), QSize(), QIcon::Normal, QIcon::Off);
+        pushButton_10->setIcon(icon19);
+        pushButton_10->setFlat(false);
 
         horizontalLayout->addWidget(pushButton_10);
 
         pushButton_11 = new QPushButton(centralwidget);
         pushButton_11->setObjectName("pushButton_11");
-        QIcon icon19;
-        icon19.addFile(QString::fromUtf8(":/file/icons/centre alignment.png"), QSize(), QIcon::Normal, QIcon::Off);
-        pushButton_11->setIcon(icon19);
+        QIcon icon20;
+        icon20.addFile(QString::fromUtf8(":/file/icons/centre alignment.png"), QSize(), QIcon::Normal, QIcon::Off);
+        pushButton_11->setIcon(icon20);
+        pushButton_11->setFlat(false);
 
         horizontalLayout->addWidget(pushButton_11);
 
         pushButton_12 = new QPushButton(centralwidget);
         pushButton_12->setObjectName("pushButton_12");
-        QIcon icon20;
-        icon20.addFile(QString::fromUtf8(":/file/icons/justify.png"), QSize(), QIcon::Normal, QIcon::Off);
-        pushButton_12->setIcon(icon20);
+        QIcon icon21;
+        icon21.addFile(QString::fromUtf8(":/file/icons/justify.png"), QSize(), QIcon::Normal, QIcon::Off);
+        pushButton_12->setIcon(icon21);
+        pushButton_12->setFlat(false);
 
         horizontalLayout->addWidget(pushButton_12);
 
         pushButton_15 = new QPushButton(centralwidget);
         pushButton_15->setObjectName("pushButton_15");
         pushButton_15->setIcon(icon5);
+        pushButton_15->setFlat(false);
 
         horizontalLayout->addWidget(pushButton_15);
 
         pushButton_16 = new QPushButton(centralwidget);
         pushButton_16->setObjectName("pushButton_16");
         pushButton_16->setIcon(icon6);
+        pushButton_16->setFlat(false);
 
         horizontalLayout->addWidget(pushButton_16);
 
@@ -286,14 +313,14 @@ public:
         splitter = new QSplitter(centralwidget);
         splitter->setObjectName("splitter");
         splitter->setOrientation(Qt::Horizontal);
-        widget = new QWidget(splitter);
-        widget->setObjectName("widget");
+        NotesListWIdget = new NotesListWidget(splitter);
+        NotesListWIdget->setObjectName("NotesListWIdget");
         QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
-        sizePolicy.setHorizontalStretch(1);
+        sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
-        sizePolicy.setHeightForWidth(widget->sizePolicy().hasHeightForWidth());
-        widget->setSizePolicy(sizePolicy);
-        splitter->addWidget(widget);
+        sizePolicy.setHeightForWidth(NotesListWIdget->sizePolicy().hasHeightForWidth());
+        NotesListWIdget->setSizePolicy(sizePolicy);
+        splitter->addWidget(NotesListWIdget);
         textEdit = new QTextEdit(splitter);
         textEdit->setObjectName("textEdit");
         QSizePolicy sizePolicy1(QSizePolicy::Expanding, QSizePolicy::Expanding);
@@ -301,6 +328,8 @@ public:
         sizePolicy1.setVerticalStretch(0);
         sizePolicy1.setHeightForWidth(textEdit->sizePolicy().hasHeightForWidth());
         textEdit->setSizePolicy(sizePolicy1);
+        textEdit->setMinimumSize(QSize(0, 0));
+        textEdit->setFrameShape(QFrame::NoFrame);
         splitter->addWidget(textEdit);
 
         verticalLayout->addWidget(splitter);
@@ -362,7 +391,8 @@ public:
         actionItalics->setText(QCoreApplication::translate("MainWindow", "Italics", nullptr));
         actionSuperscript->setText(QCoreApplication::translate("MainWindow", "Superscript", nullptr));
         actionSubscript->setText(QCoreApplication::translate("MainWindow", "Subscript", nullptr));
-        pushButton->setText(QString());
+        NewNoteBtn->setText(QString());
+        RemoveNoteBtn->setText(QString());
         pushButton_2->setText(QString());
         pushButton_17->setText(QString());
         pushButton_3->setText(QString());

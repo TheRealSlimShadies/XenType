@@ -1,7 +1,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-#include <QMainWindow>
+#include<QMainWindow>
 #include<QTextEdit>
 #include<QFile>
 #include<QFileDialog>
@@ -11,19 +11,24 @@
 #include<QColorDialog>
 #include<QTextCursor>
 #include<QTextCharFormat>
+#include<QWidget>
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
+
+class NotesManager;
+struct Note;
 
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    MainWindow(QWidget *parent = nullptr);
+    MainWindow(NotesManager& manager, QWidget *parent = nullptr);
     ~MainWindow();
 
 private slots:
+//handle signals from ui
     void on_actionCopy_triggered();
 
     void on_actionCut_triggered();
@@ -62,7 +67,32 @@ private slots:
 
     void on_pushButton_14_clicked();
 
+    void onNewNoteBtnClicked();
+
+    void onRemoveNoteBtnClicked();
+
+
+
+//handle NoteManager Signals
+    void onNewNoteCreated(int id);
+
+    void onNoteContentChanged(int id);
+
+//handle NotesListWidget Signals
+    void onSelectedNoteChanged(int id);
+
+    void onRemoveNote(int id);
+
+
 private:
+
+    void addNoteToList(const Note& note);
+    void removeNote(int id);
+
+    void init();
+    void makeConnections();
+
     Ui::MainWindow *ui;
+    NotesManager& notesManager;
 };
 #endif // MAINWINDOW_H

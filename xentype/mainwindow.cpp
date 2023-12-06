@@ -1,11 +1,22 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
-MainWindow::MainWindow(QWidget *parent)
+#include "notesmanager.h"
+#include "note.h"
+#include "noteslistwidget.h"
+
+#include <QPushButton>
+#include <QMessageBox>
+
+MainWindow::MainWindow(NotesManager& manager,QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
+    , notesManager(manager)
 {
     ui->setupUi(this);
+
+    makeConnections();
+    init();
 }
 
 MainWindow::~MainWindow()
@@ -184,5 +195,96 @@ void MainWindow::on_pushButton_14_clicked()
     // Apply the format to the selected text or the cursor position
     cursor.mergeCharFormat(format);
     ui->textEdit->mergeCurrentCharFormat(format);
+}
+
+
+
+void MainWindow::onNewNoteBtnClicked()
+{
+    notesManager.createNewNote();
+}
+
+void MainWindow::onRemoveNoteBtnClicked()
+{
+    removeNote(ui->NotesListWIdget->currentNoteId());
+}
+
+void MainWindow::onNewNoteCreated(int id)
+{
+    addNoteToList(notesManager.note(id));
+}
+
+void MainWindow::onNoteContentChanged(int id)
+{
+    ui->NotesListWIdget->updateCurrentNote(notesManager.note(id));
+}
+
+void MainWindow::onSelectedNoteChanged(int id)
+{
+    auto* document = notesManager.noteDocument(id);
+    if (document)
+    {
+    ui->textEdit->setDocument(document);
+    auto cursor = ui->textEdit->textCursor();
+    cursor.movePosition(QTextCursor::End);
+    ui->textEdit->setTextCursor(cursor);
+    }
+}
+
+void MainWindow::onRemoveNote(int id)
+{
+    removeNote(id);
+}
+
+void MainWindow::addNoteToList(const Note& note)
+{
+    ui->NotesListWIdget->addNote(note);
+}
+
+void MainWindow::removeNote(int id)
+{
+    QString noteTitle = notesManager.note(id).title;
+
+    auto pressedBtn = QMessageBox::information(this, "Remove Note?",
+                                               QString("Are you sure you want to remove %0?").arg(noteTitle),
+                                               QMessageBox::Yes | QMessageBox::No, QMessageBox::No);
+
+    if (pressedBtn == QMessageBox::Yes)
+    {
+    if(notesManager.count()==1)
+    {
+        ui->textEdit->setDocument(nullptr);
+    }
+
+    ui->NotesListWIdget->removeCurrentNote();
+    notesManager.removeNote(id);
+    }
+}
+
+void MainWindow::init()
+{
+    auto notesList = notesManager.noteCollection();
+    std::sort(notesList.begin(), notesList.end(),
+                [](const Note& left, const Note& right)
+                {
+                return left.lastModified < right.lastModified;
+                });
+
+    for (auto& note : notesList)
+    {
+    addNoteToList(note);
+    }
+}
+
+void MainWindow::makeConnections()
+{
+    connect(ui->NewNoteBtn, &QPushButton::clicked , this, &MainWindow::onNewNoteBtnClicked);
+    connect(ui->RemoveNoteBtn, &QPushButton::clicked , this, &MainWindow::onRemoveNoteBtnClicked);
+
+    connect (&notesManager, &NotesManager::newNoteCreated, this, &MainWindow::onNewNoteCreated);
+    connect (&notesManager, &NotesManager::NoteContentChanged, this, &MainWindow::onNoteContentChanged);
+
+    connect (ui->NotesListWIdget, &NotesListWidget::selectedNoteChanged, this, &MainWindow::onSelectedNoteChanged);
+
 }
 
