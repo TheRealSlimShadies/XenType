@@ -4,12 +4,12 @@
 #include <QIcon>
 #include <QApplication>
 #include "notesmanager.h"
-
 welcome::welcome(QWidget *parent)
     :QWidget(parent),
     ui(new Ui::welcome)
 {
     ui->setupUi(this);
+    setWindowFlag(Qt::FramelessWindowHint);
 }
 
 welcome::~welcome()
@@ -19,6 +19,7 @@ welcome::~welcome()
 
 void welcome::on_pushButton_clicked()
 {
+    this->hide();
     NotesManager *notesManager = new NotesManager();
     MainWindow *mainWindow = new MainWindow(*notesManager);
     mainWindow->show();
