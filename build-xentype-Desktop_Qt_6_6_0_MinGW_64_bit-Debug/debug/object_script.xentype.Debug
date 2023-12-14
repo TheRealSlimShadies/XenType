@@ -3,10 +3,14 @@ debug/main.o
 debug/mainwindow.o
 debug/noteslistwidget.o
 debug/notesmanager.o
+debug/notewidget.o
+debug/renamedialog.o
 debug/welcome.o
 debug/qrc_resource.o
 debug/moc_aboutme.o
 debug/moc_mainwindow.o
 debug/moc_noteslistwidget.o
 debug/moc_notesmanager.o
+debug/moc_notewidget.o
+debug/moc_renamedialog.o
 debug/moc_welcome.o

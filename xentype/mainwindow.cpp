@@ -5,6 +5,7 @@
 #include "noteslistwidget.h"
 #include <QPushButton>
 #include <QMessageBox>
+#include "aboutme.h"
 
 
 MainWindow::MainWindow(NotesManager& manager,QWidget *parent)
@@ -200,7 +201,7 @@ void MainWindow::on_pushButton_14_clicked()
 
 void MainWindow::on_actionXenType_triggered()
 {
-    QDialog anInstance;
+    Dialog anInstance;
     anInstance.setModal(true);
     anInstance.exec();
 }
@@ -267,7 +268,11 @@ void MainWindow::removeNote(int id)
     notesManager.removeNote(id);
     }
 }
-
+void MainWindow::onRenameNote(int id,const QString& newTitle)
+{
+    notesManager.renameNote(id,newTitle);
+    ui -> NotesListWIdget ->updateCurrentNote(notesManager.note(id));
+}
 void MainWindow::init()
 {
     auto notesList = notesManager.noteCollection();
@@ -292,5 +297,6 @@ void MainWindow::makeConnections()
     connect (&notesManager, &NotesManager::NoteContentChanged, this, &MainWindow::onNoteContentChanged);
 
     connect (ui->NotesListWIdget, &NotesListWidget::selectedNoteChanged, this, &MainWindow::onSelectedNoteChanged);
-
+    connect (ui -> NotesListWIdget, &NotesListWidget::removeNote,this,&MainWindow::onRemoveNote);
+    connect(ui ->NotesListWIdget,&NotesListWidget::renameNote,this,&MainWindow::onRenameNote);
 }

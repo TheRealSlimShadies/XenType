@@ -24,9 +24,6 @@ NotesManager::~NotesManager()
     writeNotes();
 }
 
-
-
-
 void NotesManager::createNewNote()
 {
 
@@ -36,7 +33,7 @@ void NotesManager::createNewNote()
 
     auto& [note, textDocument] = notes[id];
     note.id = id;
-    note.title= "New Note";
+    note.title= "";
     note.lastModified = QDateTime::currentDateTime();
     textDocument = createNewTextDocument(note);
     
@@ -56,8 +53,13 @@ void NotesManager::removeNote(int id)
 
 void NotesManager::renameNote(int id, const QString &newTitle)
 {
-    Q_UNUSED(id)
-    Q_UNUSED(newTitle)
+    auto found = notes.find(id);
+    if (found != notes.end())
+    {
+        auto&[note,textDocument] = found -> second;
+        note.title = newTitle;
+        note.lastModified = QDateTime::currentDateTime();
+    }
 }
 
 const Note &NotesManager::note(int id) const
