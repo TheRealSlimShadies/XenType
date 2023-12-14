@@ -14,6 +14,7 @@ SOURCES += \
     mainwindow.cpp \
     noteslistwidget.cpp \
     notesmanager.cpp \
+    save.cpp \
     welcome.cpp
 
 HEADERS += \
@@ -22,6 +23,7 @@ HEADERS += \
     note.h \
     noteslistwidget.h \
     notesmanager.h \
+    save.h \
     welcome.h
 
 FORMS += \
