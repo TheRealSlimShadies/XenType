@@ -6,6 +6,7 @@
 #include <QPushButton>
 #include <QMessageBox>
 #include "aboutme.h"
+#include "aboutme.h"
 
 
 MainWindow::MainWindow(NotesManager& manager,QWidget *parent)
