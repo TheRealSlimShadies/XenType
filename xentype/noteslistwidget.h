@@ -25,6 +25,8 @@ public:
 
 signals:
     void selectedNoteChanged(int id);
+    void removeNote(int id);
+    void renameNote(int id,const QString& newTitle);
 
 private:
     void onItemSelectionChanged();

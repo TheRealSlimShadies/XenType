@@ -14,6 +14,8 @@ SOURCES += \
     mainwindow.cpp \
     noteslistwidget.cpp \
     notesmanager.cpp \
+    notewidget.cpp \
+    renamedialog.cpp \
     welcome.cpp
 
 HEADERS += \
@@ -22,12 +24,15 @@ HEADERS += \
     note.h \
     noteslistwidget.h \
     notesmanager.h \
+    notewidget.h \
+    renamedialog.h \
     welcome.h
 
 FORMS += \
     aboutme.ui \
     mainwindow.ui \
     noteslistwidget.ui \
+    renamedialog.ui \
     welcome.ui
 
 # Default rules for deployment.
