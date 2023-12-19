@@ -41,15 +41,32 @@ static constexpr auto qt_meta_stringdata_CLASSNotesListWidgetENDCLASS = QtMocHel
     "NotesListWidget",
     "selectedNoteChanged",
     "",
+<<<<<<< HEAD
     "id"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSNotesListWidgetENDCLASS_t {
     uint offsetsAndSizes[8];
+=======
+    "id",
+    "removeNote",
+    "renameNote",
+    "newTitle"
+);
+#else  // !QT_MOC_HAS_STRING_DATA
+struct qt_meta_stringdata_CLASSNotesListWidgetENDCLASS_t {
+    uint offsetsAndSizes[14];
+>>>>>>> 37221a0 (Resolve conflicts)
     char stringdata0[16];
     char stringdata1[20];
     char stringdata2[1];
     char stringdata3[3];
+<<<<<<< HEAD
+=======
+    char stringdata4[11];
+    char stringdata5[11];
+    char stringdata6[9];
+>>>>>>> 37221a0 (Resolve conflicts)
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSNotesListWidgetENDCLASS_t::offsetsAndSizes) + ofs), len 
@@ -58,12 +75,26 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSNotesListWidgetENDCLASS_t qt_me
         QT_MOC_LITERAL(0, 15),  // "NotesListWidget"
         QT_MOC_LITERAL(16, 19),  // "selectedNoteChanged"
         QT_MOC_LITERAL(36, 0),  // ""
+<<<<<<< HEAD
         QT_MOC_LITERAL(37, 2)   // "id"
+=======
+        QT_MOC_LITERAL(37, 2),  // "id"
+        QT_MOC_LITERAL(40, 10),  // "removeNote"
+        QT_MOC_LITERAL(51, 10),  // "renameNote"
+        QT_MOC_LITERAL(62, 8)   // "newTitle"
+>>>>>>> 37221a0 (Resolve conflicts)
     },
     "NotesListWidget",
     "selectedNoteChanged",
     "",
+<<<<<<< HEAD
     "id"
+=======
+    "id",
+    "removeNote",
+    "renameNote",
+    "newTitle"
+>>>>>>> 37221a0 (Resolve conflicts)
 };
 #undef QT_MOC_LITERAL
 #endif // !QT_MOC_HAS_STRING_DATA
@@ -75,11 +106,16 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSNotesListWidgetENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
+<<<<<<< HEAD
        1,   14, // methods
+=======
+       3,   14, // methods
+>>>>>>> 37221a0 (Resolve conflicts)
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
+<<<<<<< HEAD
        1,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
@@ -87,6 +123,19 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSNotesListWidgetENDCLASS[] = {
 
  // signals: parameters
     QMetaType::Void, QMetaType::Int,    3,
+=======
+       3,       // signalCount
+
+ // signals: name, argc, parameters, tag, flags, initial metatype offsets
+       1,    1,   32,    2, 0x06,    1 /* Public */,
+       4,    1,   35,    2, 0x06,    3 /* Public */,
+       5,    2,   38,    2, 0x06,    5 /* Public */,
+
+ // signals: parameters
+    QMetaType::Void, QMetaType::Int,    3,
+    QMetaType::Void, QMetaType::Int,    3,
+    QMetaType::Void, QMetaType::Int, QMetaType::QString,    3,    6,
+>>>>>>> 37221a0 (Resolve conflicts)
 
        0        // eod
 };
@@ -102,7 +151,18 @@ Q_CONSTINIT const QMetaObject NotesListWidget::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<NotesListWidget, std::true_type>,
         // method 'selectedNoteChanged'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
+<<<<<<< HEAD
         QtPrivate::TypeAndForceComplete<int, std::false_type>
+=======
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'removeNote'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'renameNote'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>
+>>>>>>> 37221a0 (Resolve conflicts)
     >,
     nullptr
 } };
@@ -114,6 +174,11 @@ void NotesListWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int 
         (void)_t;
         switch (_id) {
         case 0: _t->selectedNoteChanged((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+<<<<<<< HEAD
+=======
+        case 1: _t->removeNote((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 2: _t->renameNote((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2]))); break;
+>>>>>>> 37221a0 (Resolve conflicts)
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -125,6 +190,23 @@ void NotesListWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int 
                 return;
             }
         }
+<<<<<<< HEAD
+=======
+        {
+            using _t = void (NotesListWidget::*)(int );
+            if (_t _q_method = &NotesListWidget::removeNote; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+                *result = 1;
+                return;
+            }
+        }
+        {
+            using _t = void (NotesListWidget::*)(int , const QString & );
+            if (_t _q_method = &NotesListWidget::renameNote; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+                *result = 2;
+                return;
+            }
+        }
+>>>>>>> 37221a0 (Resolve conflicts)
     }
 }
 
@@ -147,6 +229,7 @@ int NotesListWidget::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
+<<<<<<< HEAD
         if (_id < 1)
             qt_static_metacall(this, _c, _id, _a);
         _id -= 1;
@@ -154,6 +237,15 @@ int NotesListWidget::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         if (_id < 1)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
         _id -= 1;
+=======
+        if (_id < 3)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 3;
+    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        if (_id < 3)
+            *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
+        _id -= 3;
+>>>>>>> 37221a0 (Resolve conflicts)
     }
     return _id;
 }
@@ -164,4 +256,21 @@ void NotesListWidget::selectedNoteChanged(int _t1)
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
+<<<<<<< HEAD
+=======
+
+// SIGNAL 1
+void NotesListWidget::removeNote(int _t1)
+{
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    QMetaObject::activate(this, &staticMetaObject, 1, _a);
+}
+
+// SIGNAL 2
+void NotesListWidget::renameNote(int _t1, const QString & _t2)
+{
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t2))) };
+    QMetaObject::activate(this, &staticMetaObject, 2, _a);
+}
+>>>>>>> 37221a0 (Resolve conflicts)
 QT_WARNING_POP

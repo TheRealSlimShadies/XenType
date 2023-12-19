@@ -84,7 +84,11 @@ private slots:
 
     void onRemoveNote(int id);
 
+<<<<<<< HEAD
 
+=======
+    void onRenameNote(int id,const QString& newTitle);
+>>>>>>> 37221a0 (Resolve conflicts)
 
 private:
 

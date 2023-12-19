@@ -1,6 +1,9 @@
 #include "notesmanager.h"
 #include "note.h"
+<<<<<<< HEAD
 #include "save.h"
+=======
+>>>>>>> 37221a0 (Resolve conflicts)
 
 #include <QTextDocument>
 #include <QSignalMapper>
@@ -25,9 +28,12 @@ NotesManager::~NotesManager()
     writeNotes();
 }
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 37221a0 (Resolve conflicts)
 void NotesManager::createNewNote()
 {
 
@@ -37,7 +43,11 @@ void NotesManager::createNewNote()
 
     auto& [note, textDocument] = notes[id];
     note.id = id;
+<<<<<<< HEAD
     note.title= "New Note";
+=======
+    note.title= "";
+>>>>>>> 37221a0 (Resolve conflicts)
     note.lastModified = QDateTime::currentDateTime();
     textDocument = createNewTextDocument(note);
     
@@ -57,8 +67,18 @@ void NotesManager::removeNote(int id)
 
 void NotesManager::renameNote(int id, const QString &newTitle)
 {
+<<<<<<< HEAD
     Q_UNUSED(id)
     Q_UNUSED(newTitle)
+=======
+    auto found = notes.find(id);
+    if (found != notes.end())
+    {
+        auto&[note,textDocument] = found -> second;
+        note.title = newTitle;
+        note.lastModified = QDateTime::currentDateTime();
+    }
+>>>>>>> 37221a0 (Resolve conflicts)
 }
 
 const Note &NotesManager::note(int id) const
@@ -114,6 +134,10 @@ void NotesManager::readNotes()
         textDocument = createNewTextDocument(note);
     }
 }
+<<<<<<< HEAD
+=======
+}
+>>>>>>> 37221a0 (Resolve conflicts)
 
 void NotesManager::writeNotes()
 {

@@ -3,10 +3,20 @@ debug/main.o
 debug/mainwindow.o
 debug/noteslistwidget.o
 debug/notesmanager.o
+<<<<<<< HEAD
+=======
+debug/notewidget.o
+debug/renamedialog.o
+>>>>>>> 37221a0 (Resolve conflicts)
 debug/welcome.o
 debug/qrc_resource.o
 debug/moc_aboutme.o
 debug/moc_mainwindow.o
 debug/moc_noteslistwidget.o
 debug/moc_notesmanager.o
+<<<<<<< HEAD
+=======
+debug/moc_notewidget.o
+debug/moc_renamedialog.o
+>>>>>>> 37221a0 (Resolve conflicts)
 debug/moc_welcome.o

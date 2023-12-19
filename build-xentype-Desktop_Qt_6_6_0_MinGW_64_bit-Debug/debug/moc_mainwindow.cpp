@@ -67,11 +67,21 @@ static constexpr auto qt_meta_stringdata_CLASSMainWindowENDCLASS = QtMocHelpers:
     "id",
     "onNoteContentChanged",
     "onSelectedNoteChanged",
+<<<<<<< HEAD
     "onRemoveNote"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {
     uint offsetsAndSizes[58];
+=======
+    "onRemoveNote",
+    "onRenameNote",
+    "newTitle"
+);
+#else  // !QT_MOC_HAS_STRING_DATA
+struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {
+    uint offsetsAndSizes[62];
+>>>>>>> 37221a0 (Resolve conflicts)
     char stringdata0[11];
     char stringdata1[24];
     char stringdata2[1];
@@ -101,6 +111,11 @@ struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {
     char stringdata26[21];
     char stringdata27[22];
     char stringdata28[13];
+<<<<<<< HEAD
+=======
+    char stringdata29[13];
+    char stringdata30[9];
+>>>>>>> 37221a0 (Resolve conflicts)
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSMainWindowENDCLASS_t::offsetsAndSizes) + ofs), len 
@@ -134,7 +149,13 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSMainWindowENDCLASS_t qt_meta_st
         QT_MOC_LITERAL(562, 2),  // "id"
         QT_MOC_LITERAL(565, 20),  // "onNoteContentChanged"
         QT_MOC_LITERAL(586, 21),  // "onSelectedNoteChanged"
+<<<<<<< HEAD
         QT_MOC_LITERAL(608, 12)   // "onRemoveNote"
+=======
+        QT_MOC_LITERAL(608, 12),  // "onRemoveNote"
+        QT_MOC_LITERAL(621, 12),  // "onRenameNote"
+        QT_MOC_LITERAL(634, 8)   // "newTitle"
+>>>>>>> 37221a0 (Resolve conflicts)
     },
     "MainWindow",
     "on_actionCopy_triggered",
@@ -164,7 +185,13 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSMainWindowENDCLASS_t qt_meta_st
     "id",
     "onNoteContentChanged",
     "onSelectedNoteChanged",
+<<<<<<< HEAD
     "onRemoveNote"
+=======
+    "onRemoveNote",
+    "onRenameNote",
+    "newTitle"
+>>>>>>> 37221a0 (Resolve conflicts)
 };
 #undef QT_MOC_LITERAL
 #endif // !QT_MOC_HAS_STRING_DATA
@@ -176,7 +203,11 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
+<<<<<<< HEAD
       26,   14, // methods
+=======
+      27,   14, // methods
+>>>>>>> 37221a0 (Resolve conflicts)
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -184,6 +215,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
+<<<<<<< HEAD
        1,    0,  170,    2, 0x08,    1 /* Private */,
        3,    0,  171,    2, 0x08,    2 /* Private */,
        4,    0,  172,    2, 0x08,    3 /* Private */,
@@ -210,6 +242,35 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
       26,    1,  195,    2, 0x08,   25 /* Private */,
       27,    1,  198,    2, 0x08,   27 /* Private */,
       28,    1,  201,    2, 0x08,   29 /* Private */,
+=======
+       1,    0,  176,    2, 0x08,    1 /* Private */,
+       3,    0,  177,    2, 0x08,    2 /* Private */,
+       4,    0,  178,    2, 0x08,    3 /* Private */,
+       5,    0,  179,    2, 0x08,    4 /* Private */,
+       6,    0,  180,    2, 0x08,    5 /* Private */,
+       7,    0,  181,    2, 0x08,    6 /* Private */,
+       8,    0,  182,    2, 0x08,    7 /* Private */,
+       9,    0,  183,    2, 0x08,    8 /* Private */,
+      10,    0,  184,    2, 0x08,    9 /* Private */,
+      11,    0,  185,    2, 0x08,   10 /* Private */,
+      12,    0,  186,    2, 0x08,   11 /* Private */,
+      13,    0,  187,    2, 0x08,   12 /* Private */,
+      14,    0,  188,    2, 0x08,   13 /* Private */,
+      15,    0,  189,    2, 0x08,   14 /* Private */,
+      16,    0,  190,    2, 0x08,   15 /* Private */,
+      17,    0,  191,    2, 0x08,   16 /* Private */,
+      18,    0,  192,    2, 0x08,   17 /* Private */,
+      19,    0,  193,    2, 0x08,   18 /* Private */,
+      20,    0,  194,    2, 0x08,   19 /* Private */,
+      21,    0,  195,    2, 0x08,   20 /* Private */,
+      22,    0,  196,    2, 0x08,   21 /* Private */,
+      23,    0,  197,    2, 0x08,   22 /* Private */,
+      24,    1,  198,    2, 0x08,   23 /* Private */,
+      26,    1,  201,    2, 0x08,   25 /* Private */,
+      27,    1,  204,    2, 0x08,   27 /* Private */,
+      28,    1,  207,    2, 0x08,   29 /* Private */,
+      29,    2,  210,    2, 0x08,   31 /* Private */,
+>>>>>>> 37221a0 (Resolve conflicts)
 
  // slots: parameters
     QMetaType::Void,
@@ -238,6 +299,10 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
     QMetaType::Void, QMetaType::Int,   25,
     QMetaType::Void, QMetaType::Int,   25,
     QMetaType::Void, QMetaType::Int,   25,
+<<<<<<< HEAD
+=======
+    QMetaType::Void, QMetaType::Int, QMetaType::QString,   25,   30,
+>>>>>>> 37221a0 (Resolve conflicts)
 
        0        // eod
 };
@@ -306,7 +371,15 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
         // method 'onRemoveNote'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
+<<<<<<< HEAD
         QtPrivate::TypeAndForceComplete<int, std::false_type>
+=======
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'onRenameNote'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>
+>>>>>>> 37221a0 (Resolve conflicts)
     >,
     nullptr
 } };
@@ -343,6 +416,10 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 23: _t->onNoteContentChanged((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
         case 24: _t->onSelectedNoteChanged((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
         case 25: _t->onRemoveNote((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+<<<<<<< HEAD
+=======
+        case 26: _t->onRenameNote((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2]))); break;
+>>>>>>> 37221a0 (Resolve conflicts)
         default: ;
         }
     }
@@ -367,6 +444,7 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
+<<<<<<< HEAD
         if (_id < 26)
             qt_static_metacall(this, _c, _id, _a);
         _id -= 26;
@@ -374,6 +452,15 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         if (_id < 26)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
         _id -= 26;
+=======
+        if (_id < 27)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 27;
+    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        if (_id < 27)
+            *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
+        _id -= 27;
+>>>>>>> 37221a0 (Resolve conflicts)
     }
     return _id;
 }

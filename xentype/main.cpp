@@ -3,6 +3,10 @@
 #include "welcome.h"
 #include <QIcon>
 #include <QApplication>
+<<<<<<< HEAD
+=======
+#include "save.h"
+>>>>>>> 37221a0 (Resolve conflicts)
 
 int main(int argc, char *argv[])
 {

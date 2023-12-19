@@ -1,0 +1,17 @@
+release/aboutme.o
+release/main.o
+release/mainwindow.o
+release/noteslistwidget.o
+release/notesmanager.o
+release/notewidget.o
+release/renamedialog.o
+release/save.o
+release/welcome.o
+release/qrc_resource.o
+release/moc_aboutme.o
+release/moc_mainwindow.o
+release/moc_noteslistwidget.o
+release/moc_notesmanager.o
+release/moc_notewidget.o
+release/moc_renamedialog.o
+release/moc_welcome.o

@@ -5,6 +5,10 @@
 #include<unordered_map>
 #include<utility>
 #include<memory>
+<<<<<<< HEAD
+=======
+#include "save.h"
+>>>>>>> 37221a0 (Resolve conflicts)
 
 
 struct Note;
@@ -36,8 +40,14 @@ signals:
 private:
     void onNoteContentChanged(int id);
 
+<<<<<<< HEAD
     void readNotes();
     void writeNotes();
+=======
+    void readNotes(){
+    void writeNotes();
+
+>>>>>>> 37221a0 (Resolve conflicts)
     std::unique_ptr<QTextDocument> createNewTextDocument(const Note& note);
 
 private:

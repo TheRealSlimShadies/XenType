@@ -14,6 +14,11 @@ SOURCES += \
     mainwindow.cpp \
     noteslistwidget.cpp \
     notesmanager.cpp \
+<<<<<<< HEAD
+=======
+    notewidget.cpp \
+    renamedialog.cpp \
+>>>>>>> 37221a0 (Resolve conflicts)
     save.cpp \
     welcome.cpp
 
@@ -23,6 +28,11 @@ HEADERS += \
     note.h \
     noteslistwidget.h \
     notesmanager.h \
+<<<<<<< HEAD
+=======
+    notewidget.h \
+    renamedialog.h \
+>>>>>>> 37221a0 (Resolve conflicts)
     save.h \
     welcome.h
 
@@ -30,6 +40,10 @@ FORMS += \
     aboutme.ui \
     mainwindow.ui \
     noteslistwidget.ui \
+<<<<<<< HEAD
+=======
+    renamedialog.ui \
+>>>>>>> 37221a0 (Resolve conflicts)
     welcome.ui
 
 # Default rules for deployment.

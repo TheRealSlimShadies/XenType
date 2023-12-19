@@ -25,6 +25,11 @@ public:
 
 signals:
     void selectedNoteChanged(int id);
+<<<<<<< HEAD
+=======
+    void removeNote(int id);
+    void renameNote(int id,const QString& newTitle);
+>>>>>>> 37221a0 (Resolve conflicts)
 
 private:
     void onItemSelectionChanged();
