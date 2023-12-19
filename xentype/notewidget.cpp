@@ -57,7 +57,7 @@ void NoteWidget::setElidedText(QLabel *label,const QString &text)
         if(parentWidget)
         {
             QFontMetrics fm(label ->font());
-            QString elidedText = fm.elidedText(text, Qt::ElideRight, parentWidget->width() - 20);
+            QString elidedText = fm.elidedText(text, Qt::ElideRight, parentWidget->width() - 50);
             label ->setText(elidedText);
         }
     }
