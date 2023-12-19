@@ -80,7 +80,6 @@ void NotesListWidget::setupNoteItem(const Note &note, QListWidgetItem *item)
     connect(widget, &NoteWidget::removeNote,this, &NotesListWidget::removeNote);
     connect(widget, &NoteWidget::renameNote,this,&NotesListWidget::renameNote);
     ui ->noteList ->setItemWidget(item,widget);
-    item->setText(note.title);
     item->setData(Qt::UserRole, note.id);
     item ->setSizeHint(widget ->sizeHint());
     ui->noteList->setCurrentItem(item);
