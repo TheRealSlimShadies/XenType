@@ -13,12 +13,24 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:#4A55A2</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: #7895CB</string>
+   </property>
    <layout class="QVBoxLayout" name="verticalLayout" stretch="0,1">
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
        <widget class="QPushButton" name="NewNoteBtn">
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:#C5DFF8;</string>
+        </property>
         <property name="text">
          <string/>
         </property>
@@ -33,6 +45,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="RemoveNoteBtn">
+        <property name="styleSheet">
+         <string notr="true">background-color:#C5DFF8;</string>
+        </property>
         <property name="text">
          <string/>
         </property>
@@ -44,6 +59,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="pushButton_3">
+        <property name="styleSheet">
+         <string notr="true">background-color:#C5DFF8;</string>
+        </property>
         <property name="text">
          <string/>
         </property>
@@ -58,6 +76,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="pushButton_4">
+        <property name="styleSheet">
+         <string notr="true">background-color:#C5DFF8;</string>
+        </property>
         <property name="text">
          <string/>
         </property>
@@ -72,6 +93,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="pushButton_5">
+        <property name="styleSheet">
+         <string notr="true">background-color:#C5DFF8;</string>
+        </property>
         <property name="text">
          <string/>
         </property>
@@ -86,6 +110,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="pushButton_6">
+        <property name="styleSheet">
+         <string notr="true">background-color:#C5DFF8;</string>
+        </property>
         <property name="text">
          <string/>
         </property>
@@ -100,6 +127,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="pushButton_7">
+        <property name="styleSheet">
+         <string notr="true">background-color:#C5DFF8;</string>
+        </property>
         <property name="text">
          <string/>
         </property>
@@ -114,6 +144,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="pushButton_8">
+        <property name="styleSheet">
+         <string notr="true">background-color:#C5DFF8;</string>
+        </property>
         <property name="text">
          <string/>
         </property>
@@ -128,6 +161,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="pushButton_13">
+        <property name="styleSheet">
+         <string notr="true">background-color:#C5DFF8;</string>
+        </property>
         <property name="text">
          <string/>
         </property>
@@ -142,6 +178,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="pushButton_14">
+        <property name="styleSheet">
+         <string notr="true">background-color:#C5DFF8;</string>
+        </property>
         <property name="text">
          <string/>
         </property>
@@ -156,6 +195,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="pushButton_9">
+        <property name="styleSheet">
+         <string notr="true">background-color:#C5DFF8;</string>
+        </property>
         <property name="text">
          <string/>
         </property>
@@ -170,6 +212,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="pushButton_10">
+        <property name="styleSheet">
+         <string notr="true">background-color:#C5DFF8;</string>
+        </property>
         <property name="text">
          <string/>
         </property>
@@ -184,6 +229,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="pushButton_11">
+        <property name="styleSheet">
+         <string notr="true">background-color:#C5DFF8;</string>
+        </property>
         <property name="text">
          <string/>
         </property>
@@ -198,6 +246,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="pushButton_12">
+        <property name="styleSheet">
+         <string notr="true">background-color:#C5DFF8;</string>
+        </property>
         <property name="text">
          <string/>
         </property>
@@ -212,6 +263,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="pushButton_15">
+        <property name="styleSheet">
+         <string notr="true">background-color:#C5DFF8;</string>
+        </property>
         <property name="text">
          <string/>
         </property>
@@ -226,6 +280,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="pushButton_16">
+        <property name="styleSheet">
+         <string notr="true">background-color:#C5DFF8;</string>
+        </property>
         <property name="text">
          <string/>
         </property>
@@ -252,6 +309,9 @@
          <verstretch>0</verstretch>
         </sizepolicy>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:#DBE2EF</string>
+       </property>
       </widget>
       <widget class="QTextEdit" name="textEdit">
        <property name="sizePolicy">
@@ -265,6 +325,9 @@
          <width>0</width>
          <height>0</height>
         </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:#F9F7F7</string>
        </property>
        <property name="frameShape">
         <enum>QFrame::NoFrame</enum>
@@ -283,14 +346,6 @@
      <height>21</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menuFile">
-    <property name="title">
-     <string>File</string>
-    </property>
-    <addaction name="actionNew"/>
-    <addaction name="separator"/>
-    <addaction name="actionExit"/>
-   </widget>
    <widget class="QMenu" name="menuEdit">
     <property name="title">
      <string>Edit</string>
@@ -308,7 +363,6 @@
     </property>
     <addaction name="actionXenType"/>
    </widget>
-   <addaction name="menuFile"/>
    <addaction name="menuEdit"/>
    <addaction name="menuAbour"/>
   </widget>

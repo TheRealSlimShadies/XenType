@@ -28,6 +28,7 @@ public:
         if (NotesListWidget->objectName().isEmpty())
             NotesListWidget->setObjectName("NotesListWidget");
         NotesListWidget->resize(176, 417);
+        NotesListWidget->setStyleSheet(QString::fromUtf8(""));
         verticalLayout = new QVBoxLayout(NotesListWidget);
         verticalLayout->setObjectName("verticalLayout");
         verticalLayout->setContentsMargins(0, 0, 0, 0);
