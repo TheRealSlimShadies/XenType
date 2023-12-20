@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>599</width>
+    <width>600</width>
     <height>419</height>
    </rect>
   </property>
@@ -14,22 +14,23 @@
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color:black;</string>
+   <string notr="true">background-color:rgb(82, 218, 255);</string>
   </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>180</x>
-     <y>60</y>
+     <x>300</x>
+     <y>0</y>
      <width>261</width>
      <height>131</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">font: 48pt &quot;Segoe UI&quot;;
-color:white;
-border: 2px solid white;
-border-radius:10px;</string>
+color:Black;
+border: 2px solid rgb(82, 218, 255);;
+border-radius:10px;
+</string>
    </property>
    <property name="text">
     <string>Xentype</string>
@@ -38,8 +39,8 @@ border-radius:10px;</string>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>200</x>
-     <y>290</y>
+     <x>340</x>
+     <y>250</y>
      <width>221</width>
      <height>51</height>
     </rect>
@@ -47,10 +48,28 @@ border-radius:10px;</string>
    <property name="styleSheet">
     <string notr="true">border: 5px solid white;
 border-radius: 10px;
-color: white;</string>
+color: black;
+background-color:lightblue;</string>
    </property>
    <property name="text">
     <string>Continue</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>300</width>
+     <height>419</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(82, 218, 255);
+border-image: url(:/file/icons/logo.png);</string>
+   </property>
+   <property name="text">
+    <string/>
    </property>
   </widget>
  </widget>
