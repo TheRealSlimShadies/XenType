@@ -11,17 +11,33 @@
 //{
 //    ui->setupUi(this);
 //}
+//#include "welcome.h"
+//#include "ui_welcome.h"
+//#include <QIcon>
+//#include <QApplication>
+//welcome::welcome(QWidget *parent)
+//    :QWidget(parent),
+//    ui(new Ui::welcome)
+//{
+//    ui->setupUi(this);
+//    setWindowFlag(Qt::FramelessWindowHint);
 
 //welcome::~welcome()
 //{
 //    delete ui;
 //}
-
 //void welcome::on_pushButton_clicked()
 //{
 //    NotesManager *notesManager = new NotesManager();
 //    MainWindow *mainWindow = new MainWindow(*notesManager);
 //    mainWindow->show();
+//void welcome::on_pushButton_clicked()
+//{
+//    this->hide();
+//    NotesManager *notesManager = new NotesManager();
+//    MainWindow *mainWindow = new MainWindow(*notesManager);
+//    mainWindow->show();
+
 
 //    this->close();
 //}

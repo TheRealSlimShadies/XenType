@@ -22,26 +22,34 @@ class Ui_welcome
 public:
     QLabel *label;
     QPushButton *pushButton;
+    QLabel *label_2;
 
     void setupUi(QWidget *welcome)
     {
         if (welcome->objectName().isEmpty())
             welcome->setObjectName("welcome");
-        welcome->resize(599, 419);
-        welcome->setStyleSheet(QString::fromUtf8("background-color:black;"));
+        welcome->resize(600, 419);
+        welcome->setStyleSheet(QString::fromUtf8("background-color:rgb(82, 218, 255);"));
         label = new QLabel(welcome);
         label->setObjectName("label");
-        label->setGeometry(QRect(180, 60, 261, 131));
+        label->setGeometry(QRect(300, 0, 261, 131));
         label->setStyleSheet(QString::fromUtf8("font: 48pt \"Segoe UI\";\n"
-"color:white;\n"
-"border: 2px solid white;\n"
-"border-radius:10px;"));
+"color:Black;\n"
+"border: 2px solid rgb(82, 218, 255);;\n"
+"border-radius:10px;\n"
+""));
         pushButton = new QPushButton(welcome);
         pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(200, 290, 221, 51));
+        pushButton->setGeometry(QRect(340, 250, 221, 51));
         pushButton->setStyleSheet(QString::fromUtf8("border: 5px solid white;\n"
 "border-radius: 10px;\n"
-"color: white;"));
+"color: black;\n"
+"background-color:lightblue;"));
+        label_2 = new QLabel(welcome);
+        label_2->setObjectName("label_2");
+        label_2->setGeometry(QRect(0, 0, 300, 419));
+        label_2->setStyleSheet(QString::fromUtf8("background-color:rgb(82, 218, 255);\n"
+"border-image: url(:/file/icons/logo.png);"));
 
         retranslateUi(welcome);
 
@@ -53,6 +61,7 @@ public:
         welcome->setWindowTitle(QCoreApplication::translate("welcome", "Form", nullptr));
         label->setText(QCoreApplication::translate("welcome", "Xentype", nullptr));
         pushButton->setText(QCoreApplication::translate("welcome", "Continue", nullptr));
+        label_2->setText(QString());
     } // retranslateUi
 
 };
