@@ -16,7 +16,8 @@ SOURCES += \
     notesmanager.cpp \
     notewidget.cpp \
     renamedialog.cpp \
-    welcome.cpp
+    welcome.cpp \
+    xmlstorage.cpp
 
 HEADERS += \
     aboutme.h \
@@ -26,7 +27,8 @@ HEADERS += \
     notesmanager.h \
     notewidget.h \
     renamedialog.h \
-    welcome.h
+    welcome.h \
+    xmlstorage.h
 
 FORMS += \
     aboutme.ui \

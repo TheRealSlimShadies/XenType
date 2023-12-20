@@ -1,24 +1,24 @@
-#ifndef WELCOME_H
-#define WELCOME_H
-#include <QWidget>
+//#ifndef WELCOME_H
+//#define WELCOME_H
+//#include <QWidget>
 
-namespace Ui {
-class welcome;
-}
+//namespace Ui {
+//class welcome;
+//}
 
-class welcome : public QWidget
-{
-    Q_OBJECT
+//class welcome : public QWidget
+//{
+//    Q_OBJECT
 
-public:
-    explicit welcome(QWidget *parent = nullptr);
-    ~welcome();
+//public:
+//    explicit welcome(QWidget *parent = nullptr);
+//    ~welcome();
 
-private slots:
-    void on_pushButton_clicked();
+//private slots:
+//    void on_pushButton_clicked();
 
-private:
-    Ui::welcome *ui;
-};
+//private:
+//    Ui::welcome *ui;
+//};
 
-#endif // WELCOME_H
+//#endif // WELCOME_H

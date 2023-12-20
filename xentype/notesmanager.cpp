@@ -1,6 +1,6 @@
 #include "notesmanager.h"
 #include "note.h"
-
+#include "xmlstorage.h"
 #include <QTextDocument>
 #include <QSignalMapper>
 
@@ -104,12 +104,22 @@ void NotesManager::onNoteContentChanged(int id)
 
 void NotesManager::readNotes()
 {
-    //todo
+    XmlStorage storage;
+
+    auto savedNotes = storage.read();
+
+    for(auto n : savedNotes){
+        n.id = nextNoteId();
+        auto& [note, textDocument] = notes[n.id];
+        note = n;
+        textDocument = createNewTextDocument(note);
+    }
 }
 
 void NotesManager::writeNotes()
 {
-    //todo
+    XmlStorage storage;
+    storage.write(noteCollection());
 }
 
 std::unique_ptr<QTextDocument> NotesManager::createNewTextDocument(const Note &note)
@@ -126,6 +136,4 @@ int nextNoteId()
     static int id=0;
     return ++id;
 }
-
-
 

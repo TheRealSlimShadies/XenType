@@ -6,6 +6,7 @@ release/notesmanager.o
 release/notewidget.o
 release/renamedialog.o
 release/welcome.o
+release/xmlstorage.o
 release/qrc_resource.o
 release/moc_aboutme.o
 release/moc_mainwindow.o
@@ -13,4 +14,3 @@ release/moc_noteslistwidget.o
 release/moc_notesmanager.o
 release/moc_notewidget.o
 release/moc_renamedialog.o
-release/moc_welcome.o
