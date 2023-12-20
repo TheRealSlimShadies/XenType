@@ -301,3 +301,9 @@ void MainWindow::makeConnections()
     connect (ui -> NotesListWIdget, &NotesListWidget::removeNote,this,&MainWindow::onRemoveNote);
     connect(ui ->NotesListWIdget,&NotesListWidget::renameNote,this,&MainWindow::onRenameNote);
 }
+
+void MainWindow::on_pushButton_2_clicked()
+{
+
+}
+

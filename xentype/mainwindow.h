@@ -86,6 +86,8 @@ private slots:
 
     void onRenameNote(int id,const QString& newTitle);
 
+    void on_pushButton_2_clicked();
+
 private:
 
     void addNoteToList(const Note& note);

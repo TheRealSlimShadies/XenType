@@ -8,6 +8,7 @@
 NoteWidget::NoteWidget(const Note& note, QWidget *parent) : QWidget(parent)
 {
     setupGui();
+
     id = note.id;
     title = note.title;
     lastModified = note.lastModified.toString(dateTimeFormat);

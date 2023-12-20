@@ -43,20 +43,6 @@
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButton_2">
-        <property name="text">
-         <string/>
-        </property>
-        <property name="icon">
-         <iconset resource="resource.qrc">
-          <normaloff>:/file/icons/Save.png</normaloff>:/file/icons/Save.png</iconset>
-        </property>
-        <property name="flat">
-         <bool>false</bool>
-        </property>
-       </widget>
-      </item>
-      <item>
        <widget class="QPushButton" name="pushButton_3">
         <property name="text">
          <string/>
@@ -302,7 +288,6 @@
      <string>File</string>
     </property>
     <addaction name="actionNew"/>
-    <addaction name="actionSave"/>
     <addaction name="separator"/>
     <addaction name="actionExit"/>
    </widget>

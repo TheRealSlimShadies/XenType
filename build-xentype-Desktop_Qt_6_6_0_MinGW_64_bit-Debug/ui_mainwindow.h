@@ -52,7 +52,6 @@ public:
     QHBoxLayout *horizontalLayout;
     QPushButton *NewNoteBtn;
     QPushButton *RemoveNoteBtn;
-    QPushButton *pushButton_2;
     QPushButton *pushButton_3;
     QPushButton *pushButton_4;
     QPushButton *pushButton_5;
@@ -183,13 +182,6 @@ public:
         RemoveNoteBtn->setIcon(icon16);
 
         horizontalLayout->addWidget(RemoveNoteBtn);
-
-        pushButton_2 = new QPushButton(centralwidget);
-        pushButton_2->setObjectName("pushButton_2");
-        pushButton_2->setIcon(icon1);
-        pushButton_2->setFlat(false);
-
-        horizontalLayout->addWidget(pushButton_2);
 
         pushButton_3 = new QPushButton(centralwidget);
         pushButton_3->setObjectName("pushButton_3");
@@ -345,7 +337,6 @@ public:
         menubar->addAction(menuEdit->menuAction());
         menubar->addAction(menuAbour->menuAction());
         menuFile->addAction(actionNew);
-        menuFile->addAction(actionSave);
         menuFile->addSeparator();
         menuFile->addAction(actionExit);
         menuEdit->addAction(actionCopy);
@@ -383,7 +374,6 @@ public:
         actionSubscript->setText(QCoreApplication::translate("MainWindow", "Subscript", nullptr));
         NewNoteBtn->setText(QString());
         RemoveNoteBtn->setText(QString());
-        pushButton_2->setText(QString());
         pushButton_3->setText(QString());
         pushButton_4->setText(QString());
         pushButton_5->setText(QString());
