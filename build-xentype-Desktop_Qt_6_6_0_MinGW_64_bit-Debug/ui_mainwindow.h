@@ -70,7 +70,6 @@ public:
     NotesListWidget *NotesListWIdget;
     QTextEdit *textEdit;
     QMenuBar *menubar;
-    QMenu *menuFile;
     QMenu *menuEdit;
     QMenu *menuAbour;
     QStatusBar *statusbar;
@@ -80,6 +79,7 @@ public:
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
         MainWindow->resize(800, 600);
+        MainWindow->setStyleSheet(QString::fromUtf8("background-color:#4A55A2"));
         actionNew = new QAction(MainWindow);
         actionNew->setObjectName("actionNew");
         QIcon icon;
@@ -164,12 +164,15 @@ public:
         actionSubscript->setIcon(icon15);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
+        centralwidget->setStyleSheet(QString::fromUtf8("background-color: #7895CB"));
         verticalLayout = new QVBoxLayout(centralwidget);
         verticalLayout->setObjectName("verticalLayout");
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName("horizontalLayout");
         NewNoteBtn = new QPushButton(centralwidget);
         NewNoteBtn->setObjectName("NewNoteBtn");
+        NewNoteBtn->setAutoFillBackground(false);
+        NewNoteBtn->setStyleSheet(QString::fromUtf8("background-color:#C5DFF8;"));
         NewNoteBtn->setIcon(icon);
         NewNoteBtn->setFlat(false);
 
@@ -177,6 +180,7 @@ public:
 
         RemoveNoteBtn = new QPushButton(centralwidget);
         RemoveNoteBtn->setObjectName("RemoveNoteBtn");
+        RemoveNoteBtn->setStyleSheet(QString::fromUtf8("background-color:#C5DFF8;"));
         QIcon icon16;
         icon16.addFile(QString::fromUtf8(":/file/icons/delete.png"), QSize(), QIcon::Normal, QIcon::Off);
         RemoveNoteBtn->setIcon(icon16);
@@ -185,6 +189,7 @@ public:
 
         pushButton_3 = new QPushButton(centralwidget);
         pushButton_3->setObjectName("pushButton_3");
+        pushButton_3->setStyleSheet(QString::fromUtf8("background-color:#C5DFF8;"));
         pushButton_3->setIcon(icon8);
         pushButton_3->setFlat(false);
 
@@ -192,6 +197,7 @@ public:
 
         pushButton_4 = new QPushButton(centralwidget);
         pushButton_4->setObjectName("pushButton_4");
+        pushButton_4->setStyleSheet(QString::fromUtf8("background-color:#C5DFF8;"));
         pushButton_4->setIcon(icon9);
         pushButton_4->setFlat(false);
 
@@ -199,6 +205,7 @@ public:
 
         pushButton_5 = new QPushButton(centralwidget);
         pushButton_5->setObjectName("pushButton_5");
+        pushButton_5->setStyleSheet(QString::fromUtf8("background-color:#C5DFF8;"));
         pushButton_5->setIcon(icon11);
         pushButton_5->setFlat(false);
 
@@ -206,6 +213,7 @@ public:
 
         pushButton_6 = new QPushButton(centralwidget);
         pushButton_6->setObjectName("pushButton_6");
+        pushButton_6->setStyleSheet(QString::fromUtf8("background-color:#C5DFF8;"));
         pushButton_6->setIcon(icon12);
         pushButton_6->setFlat(false);
 
@@ -213,6 +221,7 @@ public:
 
         pushButton_7 = new QPushButton(centralwidget);
         pushButton_7->setObjectName("pushButton_7");
+        pushButton_7->setStyleSheet(QString::fromUtf8("background-color:#C5DFF8;"));
         pushButton_7->setIcon(icon13);
         pushButton_7->setFlat(false);
 
@@ -220,6 +229,7 @@ public:
 
         pushButton_8 = new QPushButton(centralwidget);
         pushButton_8->setObjectName("pushButton_8");
+        pushButton_8->setStyleSheet(QString::fromUtf8("background-color:#C5DFF8;"));
         pushButton_8->setIcon(icon10);
         pushButton_8->setFlat(false);
 
@@ -227,6 +237,7 @@ public:
 
         pushButton_13 = new QPushButton(centralwidget);
         pushButton_13->setObjectName("pushButton_13");
+        pushButton_13->setStyleSheet(QString::fromUtf8("background-color:#C5DFF8;"));
         pushButton_13->setIcon(icon14);
         pushButton_13->setFlat(false);
 
@@ -234,6 +245,7 @@ public:
 
         pushButton_14 = new QPushButton(centralwidget);
         pushButton_14->setObjectName("pushButton_14");
+        pushButton_14->setStyleSheet(QString::fromUtf8("background-color:#C5DFF8;"));
         pushButton_14->setIcon(icon15);
         pushButton_14->setFlat(false);
 
@@ -241,6 +253,7 @@ public:
 
         pushButton_9 = new QPushButton(centralwidget);
         pushButton_9->setObjectName("pushButton_9");
+        pushButton_9->setStyleSheet(QString::fromUtf8("background-color:#C5DFF8;"));
         QIcon icon17;
         icon17.addFile(QString::fromUtf8(":/file/icons/left alignment.png"), QSize(), QIcon::Normal, QIcon::Off);
         pushButton_9->setIcon(icon17);
@@ -250,6 +263,7 @@ public:
 
         pushButton_10 = new QPushButton(centralwidget);
         pushButton_10->setObjectName("pushButton_10");
+        pushButton_10->setStyleSheet(QString::fromUtf8("background-color:#C5DFF8;"));
         QIcon icon18;
         icon18.addFile(QString::fromUtf8(":/file/icons/right alignment.png"), QSize(), QIcon::Normal, QIcon::Off);
         pushButton_10->setIcon(icon18);
@@ -259,6 +273,7 @@ public:
 
         pushButton_11 = new QPushButton(centralwidget);
         pushButton_11->setObjectName("pushButton_11");
+        pushButton_11->setStyleSheet(QString::fromUtf8("background-color:#C5DFF8;"));
         QIcon icon19;
         icon19.addFile(QString::fromUtf8(":/file/icons/centre alignment.png"), QSize(), QIcon::Normal, QIcon::Off);
         pushButton_11->setIcon(icon19);
@@ -268,6 +283,7 @@ public:
 
         pushButton_12 = new QPushButton(centralwidget);
         pushButton_12->setObjectName("pushButton_12");
+        pushButton_12->setStyleSheet(QString::fromUtf8("background-color:#C5DFF8;"));
         QIcon icon20;
         icon20.addFile(QString::fromUtf8(":/file/icons/justify.png"), QSize(), QIcon::Normal, QIcon::Off);
         pushButton_12->setIcon(icon20);
@@ -277,6 +293,7 @@ public:
 
         pushButton_15 = new QPushButton(centralwidget);
         pushButton_15->setObjectName("pushButton_15");
+        pushButton_15->setStyleSheet(QString::fromUtf8("background-color:#C5DFF8;"));
         pushButton_15->setIcon(icon5);
         pushButton_15->setFlat(false);
 
@@ -284,6 +301,7 @@ public:
 
         pushButton_16 = new QPushButton(centralwidget);
         pushButton_16->setObjectName("pushButton_16");
+        pushButton_16->setStyleSheet(QString::fromUtf8("background-color:#C5DFF8;"));
         pushButton_16->setIcon(icon6);
         pushButton_16->setFlat(false);
 
@@ -302,6 +320,7 @@ public:
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(NotesListWIdget->sizePolicy().hasHeightForWidth());
         NotesListWIdget->setSizePolicy(sizePolicy);
+        NotesListWIdget->setStyleSheet(QString::fromUtf8("background-color:#DBE2EF"));
         splitter->addWidget(NotesListWIdget);
         textEdit = new QTextEdit(splitter);
         textEdit->setObjectName("textEdit");
@@ -311,6 +330,7 @@ public:
         sizePolicy1.setHeightForWidth(textEdit->sizePolicy().hasHeightForWidth());
         textEdit->setSizePolicy(sizePolicy1);
         textEdit->setMinimumSize(QSize(0, 0));
+        textEdit->setStyleSheet(QString::fromUtf8("background-color:#F9F7F7"));
         textEdit->setFrameShape(QFrame::NoFrame);
         splitter->addWidget(textEdit);
 
@@ -321,8 +341,6 @@ public:
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
         menubar->setGeometry(QRect(0, 0, 800, 21));
-        menuFile = new QMenu(menubar);
-        menuFile->setObjectName("menuFile");
         menuEdit = new QMenu(menubar);
         menuEdit->setObjectName("menuEdit");
         menuAbour = new QMenu(menubar);
@@ -333,12 +351,8 @@ public:
         statusbar->setStyleSheet(QString::fromUtf8(""));
         MainWindow->setStatusBar(statusbar);
 
-        menubar->addAction(menuFile->menuAction());
         menubar->addAction(menuEdit->menuAction());
         menubar->addAction(menuAbour->menuAction());
-        menuFile->addAction(actionNew);
-        menuFile->addSeparator();
-        menuFile->addAction(actionExit);
         menuEdit->addAction(actionCopy);
         menuEdit->addAction(actionCut);
         menuEdit->addAction(actionPaste);
@@ -388,7 +402,6 @@ public:
         pushButton_12->setText(QString());
         pushButton_15->setText(QString());
         pushButton_16->setText(QString());
-        menuFile->setTitle(QCoreApplication::translate("MainWindow", "File", nullptr));
         menuEdit->setTitle(QCoreApplication::translate("MainWindow", "Edit", nullptr));
         menuAbour->setTitle(QCoreApplication::translate("MainWindow", "About", nullptr));
     } // retranslateUi
