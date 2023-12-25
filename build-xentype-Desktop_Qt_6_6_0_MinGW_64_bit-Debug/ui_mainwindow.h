@@ -14,6 +14,7 @@
 #include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
@@ -66,6 +67,7 @@ public:
     QPushButton *pushButton_12;
     QPushButton *pushButton_15;
     QPushButton *pushButton_16;
+    QLineEdit *searchLineEdit;
     QSplitter *splitter;
     NotesListWidget *NotesListWIdget;
     QTextEdit *textEdit;
@@ -310,6 +312,11 @@ public:
 
         verticalLayout->addLayout(horizontalLayout);
 
+        searchLineEdit = new QLineEdit(centralwidget);
+        searchLineEdit->setObjectName("searchLineEdit");
+
+        verticalLayout->addWidget(searchLineEdit);
+
         splitter = new QSplitter(centralwidget);
         splitter->setObjectName("splitter");
         splitter->setOrientation(Qt::Horizontal);
@@ -336,7 +343,7 @@ public:
 
         verticalLayout->addWidget(splitter);
 
-        verticalLayout->setStretch(1, 1);
+        verticalLayout->setStretch(2, 1);
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
