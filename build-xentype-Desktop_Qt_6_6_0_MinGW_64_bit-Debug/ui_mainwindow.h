@@ -67,9 +67,9 @@ public:
     QPushButton *pushButton_12;
     QPushButton *pushButton_15;
     QPushButton *pushButton_16;
-    QLineEdit *searchLineEdit;
     QSplitter *splitter;
     NotesListWidget *NotesListWIdget;
+    QLineEdit *searchLineEdit;
     QTextEdit *textEdit;
     QMenuBar *menubar;
     QMenu *menuEdit;
@@ -312,11 +312,6 @@ public:
 
         verticalLayout->addLayout(horizontalLayout);
 
-        searchLineEdit = new QLineEdit(centralwidget);
-        searchLineEdit->setObjectName("searchLineEdit");
-
-        verticalLayout->addWidget(searchLineEdit);
-
         splitter = new QSplitter(centralwidget);
         splitter->setObjectName("splitter");
         splitter->setOrientation(Qt::Horizontal);
@@ -328,6 +323,9 @@ public:
         sizePolicy.setHeightForWidth(NotesListWIdget->sizePolicy().hasHeightForWidth());
         NotesListWIdget->setSizePolicy(sizePolicy);
         NotesListWIdget->setStyleSheet(QString::fromUtf8("background-color:#DBE2EF"));
+        searchLineEdit = new QLineEdit(NotesListWIdget);
+        searchLineEdit->setObjectName("searchLineEdit");
+        searchLineEdit->setGeometry(QRect(-60, 0, 161, 21));
         splitter->addWidget(NotesListWIdget);
         textEdit = new QTextEdit(splitter);
         textEdit->setObjectName("textEdit");
@@ -343,7 +341,7 @@ public:
 
         verticalLayout->addWidget(splitter);
 
-        verticalLayout->setStretch(2, 1);
+        verticalLayout->setStretch(1, 1);
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");

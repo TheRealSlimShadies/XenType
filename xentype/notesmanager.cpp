@@ -33,7 +33,7 @@ void NotesManager::createNewNote()
 
     auto& [note, textDocument] = notes[id];
     note.id = id;
-    note.title= "New Note";
+    note.title= "New Note_" + QString::number(note.id);
     note.lastModified = QDateTime::currentDateTime();
     textDocument = createNewTextDocument(note);
     
