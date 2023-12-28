@@ -20,7 +20,7 @@
    <property name="styleSheet">
     <string notr="true">background-color: #7895CB</string>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout" stretch="0,1">
+   <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,1">
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
@@ -298,6 +298,19 @@
      </layout>
     </item>
     <item>
+     <widget class="QLineEdit" name="searchLineEdit">
+      <property name="styleSheet">
+       <string notr="true">color:white;</string>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <property name="placeholderText">
+       <string>Search Note</string>
+      </property>
+     </widget>
+    </item>
+    <item>
      <widget class="QSplitter" name="splitter">
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
@@ -312,16 +325,6 @@
        <property name="styleSheet">
         <string notr="true">background-color:#DBE2EF</string>
        </property>
-       <widget class="QLineEdit" name="searchLineEdit">
-        <property name="geometry">
-         <rect>
-          <x>-60</x>
-          <y>0</y>
-          <width>161</width>
-          <height>21</height>
-         </rect>
-        </property>
-       </widget>
       </widget>
       <widget class="QTextEdit" name="textEdit">
        <property name="sizePolicy">

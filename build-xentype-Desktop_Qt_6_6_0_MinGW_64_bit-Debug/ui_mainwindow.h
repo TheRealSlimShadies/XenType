@@ -67,9 +67,9 @@ public:
     QPushButton *pushButton_12;
     QPushButton *pushButton_15;
     QPushButton *pushButton_16;
+    QLineEdit *searchLineEdit;
     QSplitter *splitter;
     NotesListWidget *NotesListWIdget;
-    QLineEdit *searchLineEdit;
     QTextEdit *textEdit;
     QMenuBar *menubar;
     QMenu *menuEdit;
@@ -312,6 +312,13 @@ public:
 
         verticalLayout->addLayout(horizontalLayout);
 
+        searchLineEdit = new QLineEdit(centralwidget);
+        searchLineEdit->setObjectName("searchLineEdit");
+        searchLineEdit->setStyleSheet(QString::fromUtf8("color:white;"));
+        searchLineEdit->setFrame(true);
+
+        verticalLayout->addWidget(searchLineEdit);
+
         splitter = new QSplitter(centralwidget);
         splitter->setObjectName("splitter");
         splitter->setOrientation(Qt::Horizontal);
@@ -323,9 +330,6 @@ public:
         sizePolicy.setHeightForWidth(NotesListWIdget->sizePolicy().hasHeightForWidth());
         NotesListWIdget->setSizePolicy(sizePolicy);
         NotesListWIdget->setStyleSheet(QString::fromUtf8("background-color:#DBE2EF"));
-        searchLineEdit = new QLineEdit(NotesListWIdget);
-        searchLineEdit->setObjectName("searchLineEdit");
-        searchLineEdit->setGeometry(QRect(-60, 0, 161, 21));
         splitter->addWidget(NotesListWIdget);
         textEdit = new QTextEdit(splitter);
         textEdit->setObjectName("textEdit");
@@ -341,7 +345,7 @@ public:
 
         verticalLayout->addWidget(splitter);
 
-        verticalLayout->setStretch(1, 1);
+        verticalLayout->setStretch(2, 1);
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
@@ -407,6 +411,7 @@ public:
         pushButton_12->setText(QString());
         pushButton_15->setText(QString());
         pushButton_16->setText(QString());
+        searchLineEdit->setPlaceholderText(QCoreApplication::translate("MainWindow", "Search Note", nullptr));
         menuEdit->setTitle(QCoreApplication::translate("MainWindow", "Edit", nullptr));
         menuAbour->setTitle(QCoreApplication::translate("MainWindow", "About", nullptr));
     } // retranslateUi
