@@ -288,6 +288,12 @@ void MainWindow::init()
     addNoteToList(note);
     }
 }
+void MainWindow::onSearchTextChanged(const QString& searchText)
+{
+    // Perform the search and update the note list
+    ui->NotesListWIdget->searchNotes(searchText);
+}
+
 
 void MainWindow::makeConnections()
 {
@@ -300,10 +306,13 @@ void MainWindow::makeConnections()
     connect (ui->NotesListWIdget, &NotesListWidget::selectedNoteChanged, this, &MainWindow::onSelectedNoteChanged);
     connect (ui -> NotesListWIdget, &NotesListWidget::removeNote,this,&MainWindow::onRemoveNote);
     connect(ui ->NotesListWIdget,&NotesListWidget::renameNote,this,&MainWindow::onRenameNote);
-}
+    // Add this line to your makeConnections function
+    connect(ui->searchLineEdit, &QLineEdit::textChanged, this, &MainWindow::onSearchTextChanged);
 
+}
 void MainWindow::on_pushButton_2_clicked()
 {
 
 }
+
 

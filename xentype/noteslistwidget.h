@@ -1,6 +1,9 @@
 #pragma once
 
 #include <QWidget>
+#include<QVector>
+#include<QList>
+#include"note.h"
 
 namespace Ui {
 class NotesListWidget;
@@ -16,17 +19,23 @@ class NotesListWidget : public QWidget
 public:
     explicit NotesListWidget(QWidget *parent = nullptr);
     ~NotesListWidget();
-
     void addNote(const Note& note);
     void removeCurrentNote();
     void updateCurrentNote (const Note& note);
+    void searchNotes(const QString& searchText);
 
     int currentNoteId();
+    // Add this declaration inside the class definition
+
 
 signals:
     void selectedNoteChanged(int id);
     void removeNote(int id);
     void renameNote(int id,const QString& newTitle);
+
+//private:
+    //QList<Note> notesList;//
+
 
 private:
     void onItemSelectionChanged();
@@ -37,6 +46,8 @@ private:
 
 private:
     Ui::NotesListWidget *ui;
+    QVector<Note> notesList;
+    void addNoteToList(const Note &note);
 };
 
 //#endif // NOTESLISTWIDGET_H

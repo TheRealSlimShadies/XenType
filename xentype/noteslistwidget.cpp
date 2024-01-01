@@ -2,6 +2,7 @@
 #include "ui_noteslistwidget.h"
 #include "note.h"
 #include "notewidget.h"
+#include<QVector>
 NotesListWidget::NotesListWidget(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::NotesListWidget)
@@ -18,6 +19,7 @@ NotesListWidget::~NotesListWidget()
 
 void NotesListWidget::addNote(const Note &note)
 {
+    notesList.prepend(note); //notes
     auto* item = new QListWidgetItem();
     ui->noteList->insertItem(0, item);
 
@@ -84,3 +86,41 @@ void NotesListWidget::setupNoteItem(const Note &note, QListWidgetItem *item)
     item ->setSizeHint(widget ->sizeHint());
     ui->noteList->setCurrentItem(item);
 }
+// Add this function to your NotesListWidget class
+QVector<Note> matchingNotes;
+void NotesListWidget::searchNotes(const QString& searchText)
+{
+    qDebug()<<"Search text: "<<searchText;
+    qDebug()<<"Clearing the list";
+    ui-> noteList ->clear();
+    qDebug()<<"Clearing matchingNotes vector";
+    matchingNotes.clear();
+    for(const Note& note : notesList)
+    {
+        qDebug()<< "Note title; "<< note.title;
+        if(note.title.contains(searchText, Qt:: CaseInsensitive))
+        {
+            matchingNotes.append(note);
+        }
+    }
+
+
+    // Iterate through all notes and add matching ones to the list
+    for (const Note& note : matchingNotes)
+    {
+        qDebug()<<"Note titlel: "<<note.title;
+        if (note.title.contains(searchText, Qt::CaseInsensitive))
+        {
+            qDebug()<<"Adding matching note to the list";
+            addNoteToList(note);
+        }
+    }
+}
+void NotesListWidget:: addNoteToList(const Note& note)
+{
+    auto* item= new QListWidgetItem();
+    ui->noteList->insertItem(0, item);
+    setupNoteItem(note, item);
+}
+
+

@@ -716,6 +716,14 @@ release/moc_noteslistwidget.cpp: ../xentype/noteslistwidget.h \
 		D:/QT/6.6.0/mingw_64/include/QtCore/QSizeF \
 		D:/QT/6.6.0/mingw_64/include/QtGui/QTransform \
 		D:/QT/6.6.0/mingw_64/include/QtCore/qnativeinterface.h \
+		D:/QT/6.6.0/mingw_64/include/QtCore/QVector \
+		D:/QT/6.6.0/mingw_64/include/QtCore/qvector.h \
+		../xentype/note.h \
+		D:/QT/6.6.0/mingw_64/include/QtCore/QString \
+		D:/QT/6.6.0/mingw_64/include/QtCore/QDateTime \
+		D:/QT/6.6.0/mingw_64/include/QtCore/qdatetime.h \
+		D:/QT/6.6.0/mingw_64/include/QtCore/qcalendar.h \
+		D:/QT/6.6.0/mingw_64/include/QtCore/qlocale.h \
 		release/moc_predefs.h \
 		D:/QT/6.6.0/mingw_64/bin/moc.exe
 	D:\QT\6.6.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Anwesh/Desktop/XenType/build-xentype-Desktop_Qt_6_6_0_MinGW_64_bit-Debug/release/moc_predefs.h -ID:/QT/6.6.0/mingw_64/mkspecs/win32-g++ -IC:/Users/Anwesh/Desktop/XenType/xentype -ID:/QT/6.6.0/mingw_64/include -ID:/QT/6.6.0/mingw_64/include/QtWidgets -ID:/QT/6.6.0/mingw_64/include/QtGui -ID:/QT/6.6.0/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\xentype\noteslistwidget.h -o release\moc_noteslistwidget.cpp
@@ -1351,7 +1359,15 @@ ui_mainwindow.h: ../xentype/mainwindow.ui \
 		D:/QT/6.6.0/mingw_64/include/QtCore/QSize \
 		D:/QT/6.6.0/mingw_64/include/QtCore/QSizeF \
 		D:/QT/6.6.0/mingw_64/include/QtGui/QTransform \
-		D:/QT/6.6.0/mingw_64/include/QtCore/qnativeinterface.h
+		D:/QT/6.6.0/mingw_64/include/QtCore/qnativeinterface.h \
+		D:/QT/6.6.0/mingw_64/include/QtCore/QVector \
+		D:/QT/6.6.0/mingw_64/include/QtCore/qvector.h \
+		../xentype/note.h \
+		D:/QT/6.6.0/mingw_64/include/QtCore/QString \
+		D:/QT/6.6.0/mingw_64/include/QtCore/QDateTime \
+		D:/QT/6.6.0/mingw_64/include/QtCore/qdatetime.h \
+		D:/QT/6.6.0/mingw_64/include/QtCore/qcalendar.h \
+		D:/QT/6.6.0/mingw_64/include/QtCore/qlocale.h
 	D:\QT\6.6.0\mingw_64\bin\uic.exe ..\xentype\mainwindow.ui -o ui_mainwindow.h
 
 ui_noteslistwidget.h: ../xentype/noteslistwidget.ui \
@@ -2029,6 +2045,8 @@ release/mainwindow.o: ../xentype/mainwindow.cpp ../xentype/mainwindow.h \
 		D:/QT/6.6.0/mingw_64/include/QtWidgets/qlayout.h \
 		D:/QT/6.6.0/mingw_64/include/QtWidgets/qlayoutitem.h \
 		D:/QT/6.6.0/mingw_64/include/QtWidgets/qgridlayout.h \
+		D:/QT/6.6.0/mingw_64/include/QtWidgets/QLineEdit \
+		D:/QT/6.6.0/mingw_64/include/QtWidgets/qlineedit.h \
 		D:/QT/6.6.0/mingw_64/include/QtWidgets/QMenu \
 		D:/QT/6.6.0/mingw_64/include/QtWidgets/qmenu.h \
 		D:/QT/6.6.0/mingw_64/include/QtWidgets/QMenuBar \
@@ -2042,10 +2060,12 @@ release/mainwindow.o: ../xentype/mainwindow.cpp ../xentype/mainwindow.h \
 		D:/QT/6.6.0/mingw_64/include/QtWidgets/qstatusbar.h \
 		D:/QT/6.6.0/mingw_64/include/QtWidgets/QVBoxLayout \
 		../xentype/noteslistwidget.h \
-		../xentype/notesmanager.h \
+		D:/QT/6.6.0/mingw_64/include/QtCore/QVector \
+		D:/QT/6.6.0/mingw_64/include/QtCore/qvector.h \
 		../xentype/note.h \
 		D:/QT/6.6.0/mingw_64/include/QtCore/QString \
 		D:/QT/6.6.0/mingw_64/include/QtCore/QDateTime \
+		../xentype/notesmanager.h \
 		../xentype/aboutme.h \
 		D:/QT/6.6.0/mingw_64/include/QtWidgets/QDialog
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\mainwindow.o ..\xentype\mainwindow.cpp
@@ -2213,6 +2233,14 @@ release/noteslistwidget.o: ../xentype/noteslistwidget.cpp ../xentype/noteslistwi
 		D:/QT/6.6.0/mingw_64/include/QtCore/QSizeF \
 		D:/QT/6.6.0/mingw_64/include/QtGui/QTransform \
 		D:/QT/6.6.0/mingw_64/include/QtCore/qnativeinterface.h \
+		D:/QT/6.6.0/mingw_64/include/QtCore/QVector \
+		D:/QT/6.6.0/mingw_64/include/QtCore/qvector.h \
+		../xentype/note.h \
+		D:/QT/6.6.0/mingw_64/include/QtCore/QString \
+		D:/QT/6.6.0/mingw_64/include/QtCore/QDateTime \
+		D:/QT/6.6.0/mingw_64/include/QtCore/qdatetime.h \
+		D:/QT/6.6.0/mingw_64/include/QtCore/qcalendar.h \
+		D:/QT/6.6.0/mingw_64/include/QtCore/qlocale.h \
 		ui_noteslistwidget.h \
 		D:/QT/6.6.0/mingw_64/include/QtCore/QVariant \
 		D:/QT/6.6.0/mingw_64/include/QtWidgets/QApplication \
@@ -2235,7 +2263,6 @@ release/noteslistwidget.o: ../xentype/noteslistwidget.cpp ../xentype/noteslistwi
 		D:/QT/6.6.0/mingw_64/include/QtCore/qpromise.h \
 		D:/QT/6.6.0/mingw_64/include/QtGui/qguiapplication.h \
 		D:/QT/6.6.0/mingw_64/include/QtGui/qinputmethod.h \
-		D:/QT/6.6.0/mingw_64/include/QtCore/qlocale.h \
 		D:/QT/6.6.0/mingw_64/include/QtGui/qguiapplication_platform.h \
 		D:/QT/6.6.0/mingw_64/include/QtWidgets/QListWidget \
 		D:/QT/6.6.0/mingw_64/include/QtWidgets/qlistwidget.h \
@@ -2261,11 +2288,6 @@ release/noteslistwidget.o: ../xentype/noteslistwidget.cpp ../xentype/noteslistwi
 		D:/QT/6.6.0/mingw_64/include/QtWidgets/qlayout.h \
 		D:/QT/6.6.0/mingw_64/include/QtWidgets/qlayoutitem.h \
 		D:/QT/6.6.0/mingw_64/include/QtWidgets/qgridlayout.h \
-		../xentype/note.h \
-		D:/QT/6.6.0/mingw_64/include/QtCore/QString \
-		D:/QT/6.6.0/mingw_64/include/QtCore/QDateTime \
-		D:/QT/6.6.0/mingw_64/include/QtCore/qdatetime.h \
-		D:/QT/6.6.0/mingw_64/include/QtCore/qcalendar.h \
 		../xentype/notewidget.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\noteslistwidget.o ..\xentype\noteslistwidget.cpp
 

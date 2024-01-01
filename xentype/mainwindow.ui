@@ -20,7 +20,7 @@
    <property name="styleSheet">
     <string notr="true">background-color: #7895CB</string>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout" stretch="0,1">
+   <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,1">
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
@@ -296,6 +296,19 @@
        </widget>
       </item>
      </layout>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="searchLineEdit">
+      <property name="styleSheet">
+       <string notr="true">color:white;</string>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <property name="placeholderText">
+       <string>Search Note</string>
+      </property>
+     </widget>
     </item>
     <item>
      <widget class="QSplitter" name="splitter">

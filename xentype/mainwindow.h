@@ -27,6 +27,9 @@ class MainWindow : public QMainWindow
 public:
    MainWindow(NotesManager& manager, QWidget *parent = nullptr);
     ~MainWindow();
+   public slots:
+   // Add this slot declaration
+   void onSearchTextChanged(const QString& searchText);
 
 private slots:
 //handle signals from ui
